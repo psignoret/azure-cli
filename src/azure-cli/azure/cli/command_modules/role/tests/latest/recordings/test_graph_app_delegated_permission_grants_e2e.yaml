@@ -1,0 +1,1706 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - ad sp create-for-rbac
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - --name --skip-assignment
+      User-Agent:
+      - python/3.7.2 (Windows-10-10.0.18362-SP0) requests/2.23.0 msrest/0.5.4 msrest_azure/0.6.3
+        azure-graphrbac/0.60.0 Azure-SDK-For-Python AZURECLI/2.5.1
+      accept-language:
+      - en-US
+    method: GET
+    uri: https://graph.windows.net/00000000-0000-0000-0000-000000000000/servicePrincipals?$filter=servicePrincipalNames%2Fany%28x%3Ax%20eq%20%27http%3A%2F%2Fcli-app-000001%27%29&api-version=1.6
+  response:
+    body:
+      string: '{"odata.metadata":"https://graph.windows.net/00000000-0000-0000-0000-000000000000/$metadata#directoryObjects","value":[]}'
+    headers:
+      access-control-allow-origin:
+      - '*'
+      cache-control:
+      - no-cache
+      content-length:
+      - '121'
+      content-type:
+      - application/json; odata=minimalmetadata; streaming=true; charset=utf-8
+      dataserviceversion:
+      - 3.0;
+      date:
+      - Tue, 05 May 2020 10:23:30 GMT
+      duration:
+      - '676444'
+      expires:
+      - '-1'
+      ocp-aad-diagnostics-server-name:
+      - oRpCgYvGUvvuYveDmr6nh1xdUczfl30fsWSoXBt/zM4=
+      ocp-aad-session-key:
+      - gBQy0YX6kYx8QQCZLj9X2sY2Scp8IecUpv2Gw3Bm7sOfl-rAet7C-7Q9Txfe2j67x6v7SL6fjkVGJMtQ3eLQzvxTpIhNrWMG44cNWBF8MdudQKRQiIvA8QtsOhTPW59C1hrCfSiWo38WLEkTr0YcrewNdy9a-Q19HjrqRMiZUHbEK38mzABqgV5Lno75clJwst1TmYhtorG_DuGydtOF0Q.jQtMN9WcIfBLCdtU9S1ehVXMlfGthNz4SOhJLo7X_VE
+      pragma:
+      - no-cache
+      request-id:
+      - 1791466f-559c-4a7f-baad-4ade93e4b166
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-aspnet-version:
+      - 4.0.30319
+      x-ms-dirapi-data-contract-version:
+      - '1.6'
+      x-powered-by:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - ad sp create-for-rbac
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - --name --skip-assignment
+      User-Agent:
+      - python/3.7.2 (Windows-10-10.0.18362-SP0) requests/2.23.0 msrest/0.5.4 msrest_azure/0.6.3
+        azure-graphrbac/0.60.0 Azure-SDK-For-Python AZURECLI/2.5.1
+      accept-language:
+      - en-US
+    method: GET
+    uri: https://graph.windows.net/00000000-0000-0000-0000-000000000000/applications?$filter=startswith%28displayName%2C%27cli-app-000001%27%29&api-version=1.6
+  response:
+    body:
+      string: '{"odata.metadata":"https://graph.windows.net/00000000-0000-0000-0000-000000000000/$metadata#directoryObjects","value":[]}'
+    headers:
+      access-control-allow-origin:
+      - '*'
+      cache-control:
+      - no-cache
+      content-length:
+      - '121'
+      content-type:
+      - application/json; odata=minimalmetadata; streaming=true; charset=utf-8
+      dataserviceversion:
+      - 3.0;
+      date:
+      - Tue, 05 May 2020 10:23:31 GMT
+      duration:
+      - '667784'
+      expires:
+      - '-1'
+      ocp-aad-diagnostics-server-name:
+      - 1NLGSpbQa/sgyX5Koc4Pfki9rdzL63nmFXc/kk253lk=
+      ocp-aad-session-key:
+      - TPO2wNY3cS2sirj3kDH0kZD0wu4168IsO38XE5IKfPEzmabgwBeNvs0nLMOuzET0Xn4obscSeQV_8_TYB72zOkhJ74Cuap6GegBpfBxpbFUbQKHQTJMOxjdRJIeyvHtyY3X7b9sMAGrb4mS3lrf0zXVQ0RxtpVkYzhaSoyb3eZjQ_qxQxDCrWxHOzpQvvvXo-o-VFM_yE-drVH7dscC58Q.NwZ5K_kf_iKGL1-a8mGmTVpkHy-PqVPd54hSx_n7euE
+      pragma:
+      - no-cache
+      request-id:
+      - 75d1cb40-0348-445b-ac6f-b2454a477efb
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-aspnet-version:
+      - 4.0.30319
+      x-ms-dirapi-data-contract-version:
+      - '1.6'
+      x-powered-by:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"availableToOtherTenants": false, "homepage": "https://cli-app-000001",
+      "passwordCredentials": [{"startDate": "2020-05-05T10:23:31.56994Z", "endDate":
+      "2021-05-05T10:23:31.56994Z", "keyId": "eac7caae-acfc-4eec-8029-03cbcfbca44f",
+      "value": "ReplacedSPPassword123*", "customKeyIdentifier": "//5yAGIAYQBjAA=="}],
+      "displayName": "cli-app-000001", "identifierUris": ["http://cli-app-000001"]}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - ad sp create-for-rbac
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '405'
+      Content-Type:
+      - application/json; charset=utf-8
+      ParameterSetName:
+      - --name --skip-assignment
+      User-Agent:
+      - python/3.7.2 (Windows-10-10.0.18362-SP0) requests/2.23.0 msrest/0.5.4 msrest_azure/0.6.3
+        azure-graphrbac/0.60.0 Azure-SDK-For-Python AZURECLI/2.5.1
+      accept-language:
+      - en-US
+    method: POST
+    uri: https://graph.windows.net/00000000-0000-0000-0000-000000000000/applications?api-version=1.6
+  response:
+    body:
+      string: '{"odata.metadata": "https://graph.windows.net/00000000-0000-0000-0000-000000000000/$metadata#directoryObjects/@Element",
+        "odata.type": "Microsoft.DirectoryServices.Application", "objectType": "Application",
+        "objectId": "1786fb82-8812-471d-9b57-81775970fbc4", "deletionTimestamp": null,
+        "acceptMappedClaims": null, "addIns": [], "appId": "bfc17ae7-4e49-4149-bcac-3494ca5b8996",
+        "applicationTemplateId": null, "appRoles": [], "availableToOtherTenants":
+        false, "displayName": "cli-app-000001", "errorUrl": null, "groupMembershipClaims":
+        null, "homepage": "https://cli-app-000001", "identifierUris": ["http://cli-app-000001"],
+        "informationalUrls": {"termsOfService": null, "support": null, "privacy":
+        null, "marketing": null}, "isDeviceOnlyAuthSupported": null, "keyCredentials":
+        [], "knownClientApplications": [], "logoutUrl": null, "logo@odata.mediaEditLink":
+        "directoryObjects/1786fb82-8812-471d-9b57-81775970fbc4/Microsoft.DirectoryServices.Application/logo",
+        "logo@odata.mediaContentType": "application/json;odata=minimalmetadata; charset=utf-8",
+        "logoUrl": null, "mainLogo@odata.mediaEditLink": "directoryObjects/1786fb82-8812-471d-9b57-81775970fbc4/Microsoft.DirectoryServices.Application/mainLogo",
+        "oauth2AllowIdTokenImplicitFlow": true, "oauth2AllowImplicitFlow": false,
+        "oauth2AllowUrlPathMatching": false, "oauth2Permissions": [{"adminConsentDescription":
+        "Allow the application to access cli-app-000001 on behalf of the signed-in
+        user.", "adminConsentDisplayName": "Access cli-app-000001", "id": "d53412d6-424d-4a3d-9750-d6fd07d84915",
+        "isEnabled": true, "type": "User", "userConsentDescription": "Allow the application
+        to access cli-app-000001 on your behalf.", "userConsentDisplayName": "Access
+        cli-app-000001", "value": "user_impersonation"}], "oauth2RequirePostResponse":
+        false, "optionalClaims": null, "orgRestrictions": [], "parentalControlSettings":
+        {"countriesBlockedForMinors": [], "legalAgeGroupRule": "Allow"}, "passwordCredentials":
+        [{"customKeyIdentifier": "//5yAGIAYQBjAA==", "endDate": "2021-05-05T10:23:31.56994Z",
+        "keyId": "eac7caae-acfc-4eec-8029-03cbcfbca44f", "startDate": "2020-05-05T10:23:31.56994Z",
+        "value": "ReplacedSPPassword123*"}], "publicClient": null, "publisherDomain":
+        "phsignor.onmicrosoft.com", "recordConsentConditions": null, "replyUrls":
+        [], "requiredResourceAccess": [], "samlMetadataUrl": null, "signInAudience":
+        "AzureADMyOrg", "tokenEncryptionKeyId": null}'
+    headers:
+      access-control-allow-origin:
+      - '*'
+      cache-control:
+      - no-cache
+      content-length:
+      - '2276'
+      content-type:
+      - application/json; odata=minimalmetadata; streaming=true; charset=utf-8
+      dataserviceversion:
+      - 3.0;
+      date:
+      - Tue, 05 May 2020 10:23:32 GMT
+      duration:
+      - '3937644'
+      expires:
+      - '-1'
+      location:
+      - https://graph.windows.net/00000000-0000-0000-0000-000000000000/directoryObjects/1786fb82-8812-471d-9b57-81775970fbc4/Microsoft.DirectoryServices.Application
+      ocp-aad-diagnostics-server-name:
+      - D20yv2/sPih/rc/m8LT1Tf7/bgDw5kvj4kF0Iy4gVyQ=
+      ocp-aad-session-key:
+      - J_ghhmZ1TBsTGjzgSh9ikoiY2O12ZtSIxk9Xp91lfndNs3Pig8u_3hTdD7Apl3vEmsF0ujPlFi0vrM1gq5P4gHCjr9TK46PvvC-nSMZ9XS8axSlrE_iP4T_gU3coNmFEhm8saXvnIvk2DSHJHCzbF3bDGfEMC9CfJE47AvLxUsfMVD7KAWNSvdtFzdYZM-g0OxsP20Z00xno2IaaQ2hp5Q.dFfvGgAm4t9brK3VOUrvbn7FqhczpIQ1hDEiiocuuns
+      pragma:
+      - no-cache
+      request-id:
+      - 31c82774-fdff-4786-ada5-9f4e6376e507
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-aspnet-version:
+      - 4.0.30319
+      x-ms-dirapi-data-contract-version:
+      - '1.6'
+      x-powered-by:
+      - ASP.NET
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"accountEnabled": "True", "appId": "bfc17ae7-4e49-4149-bcac-3494ca5b8996"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - ad sp create-for-rbac
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '75'
+      Content-Type:
+      - application/json; charset=utf-8
+      ParameterSetName:
+      - --name --skip-assignment
+      User-Agent:
+      - python/3.7.2 (Windows-10-10.0.18362-SP0) requests/2.23.0 msrest/0.5.4 msrest_azure/0.6.3
+        azure-graphrbac/0.60.0 Azure-SDK-For-Python AZURECLI/2.5.1
+      accept-language:
+      - en-US
+    method: POST
+    uri: https://graph.windows.net/00000000-0000-0000-0000-000000000000/servicePrincipals?api-version=1.6
+  response:
+    body:
+      string: '{"odata.metadata":"https://graph.windows.net/00000000-0000-0000-0000-000000000000/$metadata#directoryObjects/@Element","odata.type":"Microsoft.DirectoryServices.ServicePrincipal","objectType":"ServicePrincipal","objectId":"1e9e699a-670d-4916-9040-151b72b36a94","deletionTimestamp":null,"accountEnabled":true,"addIns":[],"alternativeNames":[],"appDisplayName":"cli-app-000001","appId":"bfc17ae7-4e49-4149-bcac-3494ca5b8996","applicationTemplateId":null,"appOwnerTenantId":"1c411c5e-78cc-4e89-af5e-169408a540b8","appRoleAssignmentRequired":false,"appRoles":[],"displayName":"cli-app-000001","errorUrl":null,"homepage":"https://cli-app-000001","informationalUrls":{"termsOfService":null,"support":null,"privacy":null,"marketing":null},"keyCredentials":[],"logoutUrl":null,"notificationEmailAddresses":[],"oauth2Permissions":[{"adminConsentDescription":"Allow
+        the application to access cli-app-000001 on behalf of the signed-in user.","adminConsentDisplayName":"Access
+        cli-app-000001","id":"d53412d6-424d-4a3d-9750-d6fd07d84915","isEnabled":true,"type":"User","userConsentDescription":"Allow
+        the application to access cli-app-000001 on your behalf.","userConsentDisplayName":"Access
+        cli-app-000001","value":"user_impersonation"}],"passwordCredentials":[],"preferredSingleSignOnMode":null,"preferredTokenSigningKeyEndDateTime":null,"preferredTokenSigningKeyThumbprint":null,"publisherName":"PHSIGNOR","replyUrls":[],"samlMetadataUrl":null,"samlSingleSignOnSettings":null,"servicePrincipalNames":["bfc17ae7-4e49-4149-bcac-3494ca5b8996","http://cli-app-000001"],"servicePrincipalType":"Application","signInAudience":"AzureADMyOrg","tags":[],"tokenEncryptionKeyId":null}'
+    headers:
+      access-control-allow-origin:
+      - '*'
+      cache-control:
+      - no-cache
+      content-length:
+      - '1670'
+      content-type:
+      - application/json; odata=minimalmetadata; streaming=true; charset=utf-8
+      dataserviceversion:
+      - 3.0;
+      date:
+      - Tue, 05 May 2020 10:23:32 GMT
+      duration:
+      - '2832875'
+      expires:
+      - '-1'
+      location:
+      - https://graph.windows.net/00000000-0000-0000-0000-000000000000/directoryObjects/1e9e699a-670d-4916-9040-151b72b36a94/Microsoft.DirectoryServices.ServicePrincipal
+      ocp-aad-diagnostics-server-name:
+      - 0dRdnsliy2MU9/firIpSqOMdl84CAToE2w1Hp02sKwc=
+      ocp-aad-session-key:
+      - 92S4k22wZCzJXwoAR8Be_8pj7OsBfKzyG45E7IJkzHbGeaai88jf_22vd1eIIiDXtP3iABkrKH6XF7Oq0Nvv8RV91a_vlX8HEcF6Y8m-jt4S9qtYe8yqLfWZ5ovHZT4ErgdRCBSUf2UJjxisEDhy-JyVHf3udPIQMEa1GBfBysGlp6ZGC7aJICL2SUqM3vyOXIxGAj5BThTl1L_Zvq6y5A.HMxOFgdfW1UBrEJA5GOkk5lmNSwvfW-fF9IJFKisz7Y
+      pragma:
+      - no-cache
+      request-id:
+      - f39d4779-d79e-42bd-86d6-e788adcac4f7
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-aspnet-version:
+      - 4.0.30319
+      x-ms-dirapi-data-contract-version:
+      - '1.6'
+      x-powered-by:
+      - ASP.NET
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - ad app permission grant
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - --id --api --scope
+      User-Agent:
+      - python/3.7.2 (Windows-10-10.0.18362-SP0) requests/2.23.0 msrest/0.5.4 msrest_azure/0.6.3
+        azure-graphrbac/0.60.0 Azure-SDK-For-Python AZURECLI/2.5.1
+      accept-language:
+      - en-US
+    method: GET
+    uri: https://graph.windows.net/00000000-0000-0000-0000-000000000000/servicePrincipals?$filter=servicePrincipalNames%2Fany%28c%3Ac%20eq%20%27bfc17ae7-4e49-4149-bcac-3494ca5b8996%27%29%20or%20objectId%20eq%20%27bfc17ae7-4e49-4149-bcac-3494ca5b8996%27&api-version=1.6
+  response:
+    body:
+      string: '{"odata.metadata":"https://graph.windows.net/00000000-0000-0000-0000-000000000000/$metadata#directoryObjects","value":[{"odata.type":"Microsoft.DirectoryServices.ServicePrincipal","objectType":"ServicePrincipal","objectId":"1e9e699a-670d-4916-9040-151b72b36a94","deletionTimestamp":null,"accountEnabled":true,"addIns":[],"alternativeNames":[],"appDisplayName":"cli-app-000001","appId":"bfc17ae7-4e49-4149-bcac-3494ca5b8996","applicationTemplateId":null,"appOwnerTenantId":"1c411c5e-78cc-4e89-af5e-169408a540b8","appRoleAssignmentRequired":false,"appRoles":[],"displayName":"cli-app-000001","errorUrl":null,"homepage":"https://cli-app-000001","informationalUrls":{"termsOfService":null,"support":null,"privacy":null,"marketing":null},"keyCredentials":[],"logoutUrl":null,"notificationEmailAddresses":[],"oauth2Permissions":[{"adminConsentDescription":"Allow
+        the application to access cli-app-000001 on behalf of the signed-in user.","adminConsentDisplayName":"Access
+        cli-app-000001","id":"d53412d6-424d-4a3d-9750-d6fd07d84915","isEnabled":true,"type":"User","userConsentDescription":"Allow
+        the application to access cli-app-000001 on your behalf.","userConsentDisplayName":"Access
+        cli-app-000001","value":"user_impersonation"}],"passwordCredentials":[],"preferredSingleSignOnMode":null,"preferredTokenSigningKeyEndDateTime":null,"preferredTokenSigningKeyThumbprint":null,"publisherName":"PHSIGNOR","replyUrls":[],"samlMetadataUrl":null,"samlSingleSignOnSettings":null,"servicePrincipalNames":["http://cli-app-000001","bfc17ae7-4e49-4149-bcac-3494ca5b8996"],"servicePrincipalType":"Application","signInAudience":"AzureADMyOrg","tags":[],"tokenEncryptionKeyId":null}]}'
+    headers:
+      access-control-allow-origin:
+      - '*'
+      cache-control:
+      - no-cache
+      content-length:
+      - '1673'
+      content-type:
+      - application/json; odata=minimalmetadata; streaming=true; charset=utf-8
+      dataserviceversion:
+      - 3.0;
+      date:
+      - Tue, 05 May 2020 10:23:34 GMT
+      duration:
+      - '828675'
+      expires:
+      - '-1'
+      ocp-aad-diagnostics-server-name:
+      - AZwhTSiIY11vDyG7oYT4ltkXdjPkuhOE5nAM+MoAMx4=
+      ocp-aad-session-key:
+      - pOghdpJFXQddiyPMw_HGUhLAKJQdWJS4HpKG_EIBVspo1WG60dETUKVODcMRMD_KC9AUBAh32h35EFtDgt_fIHQQZNUQn5JweOO4T_fEMAfW4omHaNIqy-qChl5mrCiq6VlRuEeVbgwHgSbJcnCu6LOVY12q0wNP3XVLPmkJ4R8VGLTNteouoeEVkglXOqM0Gz79g0lOna5zf3Su1pn-Sg.Vul7_HMVby4LDHyAZtOX1Aj9yPwf2Cze1j6wZMVCJUU
+      pragma:
+      - no-cache
+      request-id:
+      - 9721b8fd-88c2-444c-b1ee-0205e2260303
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-aspnet-version:
+      - 4.0.30319
+      x-ms-dirapi-data-contract-version:
+      - '1.6'
+      x-powered-by:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - ad app permission grant
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - --id --api --scope
+      User-Agent:
+      - python/3.7.2 (Windows-10-10.0.18362-SP0) requests/2.23.0 msrest/0.5.4 msrest_azure/0.6.3
+        azure-graphrbac/0.60.0 Azure-SDK-For-Python AZURECLI/2.5.1
+      accept-language:
+      - en-US
+    method: GET
+    uri: https://graph.windows.net/00000000-0000-0000-0000-000000000000/servicePrincipals?$filter=servicePrincipalNames%2Fany%28c%3Ac%20eq%20%2700000002-0000-0000-c000-000000000000%27%29%20or%20objectId%20eq%20%2700000002-0000-0000-c000-000000000000%27&api-version=1.6
+  response:
+    body:
+      string: '{"odata.metadata":"https://graph.windows.net/00000000-0000-0000-0000-000000000000/$metadata#directoryObjects","value":[{"odata.type":"Microsoft.DirectoryServices.ServicePrincipal","objectType":"ServicePrincipal","objectId":"84052623-1b84-4385-be42-84d00f4b2f60","deletionTimestamp":null,"accountEnabled":true,"addIns":[],"alternativeNames":[],"appDisplayName":"Windows
+        Azure Active Directory","appId":"00000002-0000-0000-c000-000000000000","applicationTemplateId":null,"appOwnerTenantId":"f8cdef31-a31e-4b4a-93e4-5f571e91255a","appRoleAssignmentRequired":false,"appRoles":[{"allowedMemberTypes":["Application"],"description":"Allows
+        the app to read all your organization''s policies without a signed-in user.
+        ","displayName":"Read your organization''s policies","id":"6c2d1b1d-a490-4178-ba6b-7efceda9129b","isEnabled":true,"value":"Policy.Read.All"},{"allowedMemberTypes":["Application"],"description":"Allows
+        the app to read data in your company or school directory, such as users, groups,
+        and apps.","displayName":"Read directory data","id":"5778995a-e1bf-45b8-affa-663a9f3f4d04","isEnabled":true,"value":"Directory.Read.All"},{"allowedMemberTypes":["Application"],"description":"Allows
+        the app to read and write all domain properties without a signed in user.  Also
+        allows the app to add,  verify and remove domains.","displayName":"Read and
+        write domains","id":"abefe9df-d5a9-41c6-a60b-27b38eac3efb","isEnabled":true,"value":"Domain.ReadWrite.All"},{"allowedMemberTypes":["Application"],"description":"Allows
+        the app to read and write data in your company or school directory, such as
+        users, and groups.  Does not allow user or group deletion.","displayName":"Read
+        and write directory data","id":"78c8a3c8-a07e-4b9e-af1b-b5ccab50a175","isEnabled":true,"value":"Directory.ReadWrite.All"},{"allowedMemberTypes":["Application"],"description":"Allows
+        the app to read and write all device properties without a signed in user.  Does
+        not allow device creation, device deletion or update of device alternative
+        security identifiers.","displayName":"Read and write devices","id":"1138cb37-bd11-4084-a2b7-9f71582aeddb","isEnabled":true,"value":"Device.ReadWrite.All"},{"allowedMemberTypes":["Application"],"description":"Allows
+        the app to read the memberships of hidden groups and administrative units
+        without a signed-in user.","displayName":"Read all hidden memberships","id":"9728c0c4-a06b-4e0e-8d1b-3d694e8ec207","isEnabled":true,"value":"Member.Read.Hidden"},{"allowedMemberTypes":["Application"],"description":"Allows
+        the app to create other applications, and fully manage those applications
+        (read, update, update application secrets and delete), without a signed-in
+        user.  It cannot update any apps that it is not an owner of.","displayName":"Manage
+        apps that this app creates or owns","id":"824c81eb-e3f8-4ee6-8f6d-de7f50d565b7","isEnabled":true,"value":"Application.ReadWrite.OwnedBy"},{"allowedMemberTypes":["Application"],"description":"Allows
+        the app to create, read, update and delete applications and service principals
+        without a signed-in user.  Does not allow management of consent grants.","displayName":"Read
+        and write all applications","id":"1cda74f2-2616-4834-b122-5cb1b07f8a59","isEnabled":true,"value":"Application.ReadWrite.All"},{"allowedMemberTypes":["Application"],"description":"Allows
+        the app to read and write all domain properties without a signed in user.  Also
+        allows the app to add,  verify and remove domains.","displayName":"Read and
+        write domains","id":"aaff0dfd-0295-48b6-a5cc-9f465bc87928","isEnabled":true,"value":"Domain.ReadWrite.All"}],"displayName":"Windows
+        Azure Active Directory","errorUrl":null,"homepage":null,"informationalUrls":{"termsOfService":null,"support":null,"privacy":null,"marketing":null},"keyCredentials":[],"logoutUrl":null,"notificationEmailAddresses":[],"oauth2Permissions":[{"adminConsentDescription":"Allows
+        the app to read your organization''s policies on behalf of the signed-in user.","adminConsentDisplayName":"Read
+        your organization''s policies","id":"80e5b1bf-3ad0-4365-943a-0ec983009b67","isEnabled":true,"type":"Admin","userConsentDescription":"Allows
+        the app to read your organization''s policies on your behalf.","userConsentDisplayName":"Read
+        your organization''s policies","value":"Policy.Read.All"},{"adminConsentDescription":"Allows
+        the app to have the same access to information in the directory as the signed-in
+        user.","adminConsentDisplayName":"Access the directory as the signed-in user","id":"a42657d6-7f20-40e3-b6f0-cee03008a62a","isEnabled":true,"type":"User","userConsentDescription":"Allows
+        the app to have the same access to information in your work or school directory
+        as you do.","userConsentDisplayName":"Access the directory as you","value":"Directory.AccessAsUser.All"},{"adminConsentDescription":"Allows
+        the app to read data in your company or school directory, such as users, groups,
+        and apps.","adminConsentDisplayName":"Read directory data","id":"5778995a-e1bf-45b8-affa-663a9f3f4d04","isEnabled":true,"type":"Admin","userConsentDescription":"Allows
+        the app to read data in your company or school directory, such as other users,
+        groups and apps.","userConsentDisplayName":"Read directory data","value":"Directory.Read.All"},{"adminConsentDescription":"Allows
+        the app to read and write data in your company or school directory, such as
+        users, and groups.  Does not allow user or group deletion.","adminConsentDisplayName":"Read
+        and write directory data","id":"78c8a3c8-a07e-4b9e-af1b-b5ccab50a175","isEnabled":true,"type":"Admin","userConsentDescription":"Allows
+        the app to read and write data in your company or school directory, such as
+        other users, groups.  Does not allow user or group deletion on your behalf.","userConsentDisplayName":"Read
+        and write directory data","value":"Directory.ReadWrite.All"},{"adminConsentDescription":"Allows
+        the app to create groups on behalf of the signed-in user and read all group
+        properties and memberships. Additionally, this allows the app to update group
+        properties and memberships for the groups the signed-in user owns.","adminConsentDisplayName":"Read
+        and write all groups","id":"970d6fa6-214a-4a9b-8513-08fad511e2fd","isEnabled":true,"type":"Admin","userConsentDescription":"Allows
+        the app to create groups on your behalf and read all group properties and
+        memberships. Additionally, this allows the app to update group properties
+        and memberships for groups you own.","userConsentDisplayName":"Read and write
+        all groups","value":"Group.ReadWrite.All"},{"adminConsentDescription":"Allows
+        the app to read basic group properties and memberships on behalf of the signed-in
+        user.","adminConsentDisplayName":"Read all groups","id":"6234d376-f627-4f0f-90e0-dff25c5211a3","isEnabled":true,"type":"Admin","userConsentDescription":"Allows
+        the app to read all group properties and memberships on your behalf.","userConsentDisplayName":"Read
+        all groups","value":"Group.Read.All"},{"adminConsentDescription":"Allows the
+        app to read the full set of profile properties of all users in your company
+        or school, on behalf of the signed-in user. Additionally, this allows the
+        app to read the profiles of the signed-in user''s reports and manager.","adminConsentDisplayName":"Read
+        all users'' full profiles","id":"c582532d-9d9e-43bd-a97c-2667a28ce295","isEnabled":true,"type":"Admin","userConsentDescription":"Allows
+        the app to read the full set of profile properties of all users in your company
+        or school, on your behalf.  Additionally, this allows the app to read the
+        profiles of your reports and manager.","userConsentDisplayName":"Read all
+        user''s full profiles","value":"User.Read.All"},{"adminConsentDescription":"Allows
+        the app to read a basic set of profile properties of all users in your company
+        or school on behalf of the signed-in user. Includes display name, first and
+        last name, photo, and email address. Additionally, this allows the app to
+        read basic info about the signed-in user''s reports and manager.","adminConsentDisplayName":"Read
+        all users'' basic profiles","id":"cba73afc-7f69-4d86-8450-4978e04ecd1a","isEnabled":true,"type":"User","userConsentDescription":"Allows
+        the app to read a basic set of profile properties of other users in your company
+        or school, on your behalf. Includes display name, first and last name, photo,
+        and email address. Additionally, this allows the app to read basic info about
+        your reports and manager.","userConsentDisplayName":"Read all user''s basic
+        profiles","value":"User.ReadBasic.All"},{"adminConsentDescription":"Allows
+        users to sign in to the app, and allows the app to read the profile of signed-in
+        users. It also allow the app to read basic company information of signed-in
+        users.","adminConsentDisplayName":"Sign in and read user profile","id":"311a71cc-e848-46a1-bdf8-97ff7156d8e6","isEnabled":true,"type":"User","userConsentDescription":"Allows
+        you to sign in to the app with your work account and let the app read your
+        profile. It also allows the app to read basic company information.","userConsentDisplayName":"Sign
+        you in and read your profile","value":"User.Read"},{"adminConsentDescription":"Allows
+        the app to read the memberships of hidden groups and administrative units
+        on behalf of the signed-in user, for those hidden groups and administrative
+        units that the signed-in user has access to.","adminConsentDisplayName":"Read
+        hidden memberships","id":"2d05a661-f651-4d57-a595-489c91eda336","isEnabled":true,"type":"Admin","userConsentDescription":"Allows
+        the app to read the memberships of hidden groups or administrative units on
+        your behalf, for those hidden groups or administrative units that you have
+        access to.","userConsentDisplayName":"Read your hidden memberships","value":"Member.Read.Hidden"}],"passwordCredentials":[],"preferredSingleSignOnMode":null,"preferredTokenSigningKeyEndDateTime":null,"preferredTokenSigningKeyThumbprint":null,"publisherName":null,"replyUrls":[],"samlMetadataUrl":null,"samlSingleSignOnSettings":null,"servicePrincipalNames":["00000002-0000-0000-c000-000000000000/graph.microsoftazure.us","https://graph.microsoftazure.us","https://graph.windows.net/","https://graph.windows.net","00000002-0000-0000-c000-000000000000/graph.windows.net","00000002-0000-0000-c000-000000000000/directory.windows.net","00000002-0000-0000-c000-000000000000"],"servicePrincipalType":"Application","signInAudience":"AzureADMultipleOrgs","tags":[],"tokenEncryptionKeyId":null}]}'
+    headers:
+      access-control-allow-origin:
+      - '*'
+      cache-control:
+      - no-cache
+      content-length:
+      - '10367'
+      content-type:
+      - application/json; odata=minimalmetadata; streaming=true; charset=utf-8
+      dataserviceversion:
+      - 3.0;
+      date:
+      - Tue, 05 May 2020 10:23:34 GMT
+      duration:
+      - '729081'
+      expires:
+      - '-1'
+      ocp-aad-diagnostics-server-name:
+      - bz5qyVKiNZUdOiolfR2f0AlBUmIbgVX+124eGK5udqg=
+      ocp-aad-session-key:
+      - TNHsbzBRdu0BQSkE1RRK95Vdg6ECH9m30oMEoPWQrz54pgJeLT7i5sXRWRGpKF31-u3XMpVh06MMxmTf75vzXRHkTiROVU5zPwyAZV_g2njQ0PpL_Somdu1kuufs2PhbogtfwTt9t0GitXf4fiZKDepHIPl8Qirn-_I9ZP5Uo2kRraDpG5ufGJ7Se-KmeJPgpMVvNsD3ichhJhFmfvRtpQ.Ez_Q5IzqhBvBmJGcr4e1M1dMB8O8WE5sXcFexTJb9oU
+      pragma:
+      - no-cache
+      request-id:
+      - 8f99f9b9-75b9-448f-87f3-06d37880f303
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-aspnet-version:
+      - 4.0.30319
+      x-ms-dirapi-data-contract-version:
+      - '1.6'
+      x-powered-by:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - ad app permission grant
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - --id --api --scope
+      User-Agent:
+      - python/3.7.2 (Windows-10-10.0.18362-SP0) requests/2.23.0 msrest/0.5.4 msrest_azure/0.6.3
+        azure-graphrbac/0.60.0 Azure-SDK-For-Python AZURECLI/2.5.1
+      accept-language:
+      - en-US
+    method: GET
+    uri: https://graph.windows.net/00000000-0000-0000-0000-000000000000/oauth2PermissionGrants?$filter=clientId%20eq%20%271e9e699a-670d-4916-9040-151b72b36a94%27&api-version=1.6
+  response:
+    body:
+      string: '{"odata.metadata":"https://graph.windows.net/00000000-0000-0000-0000-000000000000/$metadata#oauth2PermissionGrants","value":[]}'
+    headers:
+      access-control-allow-origin:
+      - '*'
+      cache-control:
+      - no-cache
+      content-length:
+      - '127'
+      content-type:
+      - application/json; odata=minimalmetadata; streaming=true; charset=utf-8
+      dataserviceversion:
+      - 3.0;
+      date:
+      - Tue, 05 May 2020 10:23:35 GMT
+      duration:
+      - '675457'
+      expires:
+      - '-1'
+      ocp-aad-diagnostics-server-name:
+      - 5VajinanjCUBC+s7uYIJKstVA5ILQxIN7jNgfPxeH8w=
+      ocp-aad-session-key:
+      - _Xkc-UYBhhXBCG3eeC7z4bE8tvTHW6B3Zjhlh67R3l0Bp19dsnlz02IG7Wz92f0fXbLhp5iOQnnNN5ci65FofRCv-y7hmFTzLu1F_Ld9e9lUKudyKau_ZDuuQAoJeHORjMQ03SHMlgyw4Ev2WQhBIbHfDJ0B3BcxfJDHesw06VNvnbmgyfBkHLlAL4f6Bvx6t9NK5-RBHzFR3jqTDLRG5A.SwHVxbM6f4srNBkHxK1CRe62YMtPF9DXWwWWFxU1xqw
+      pragma:
+      - no-cache
+      request-id:
+      - 897178a0-e705-4d60-854a-b54f9d7ca181
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-aspnet-version:
+      - 4.0.30319
+      x-ms-dirapi-data-contract-version:
+      - '1.6'
+      x-powered-by:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"odata.type": "Microsoft.DirectoryServices.OAuth2PermissionGrant", "clientId":
+      "1e9e699a-670d-4916-9040-151b72b36a94", "consentType": "AllPrincipals", "resourceId":
+      "84052623-1b84-4385-be42-84d00f4b2f60", "scope": "User.Read", "startTime": "2020-05-05T10:23:34.799463",
+      "expiryTime": "2021-05-05T10:23:34.799463"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - ad app permission grant
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '314'
+      Content-Type:
+      - application/json; charset=utf-8
+      ParameterSetName:
+      - --id --api --scope
+      User-Agent:
+      - python/3.7.2 (Windows-10-10.0.18362-SP0) requests/2.23.0 msrest/0.5.4 msrest_azure/0.6.3
+        azure-graphrbac/0.60.0 Azure-SDK-For-Python AZURECLI/2.5.1
+      accept-language:
+      - en-US
+    method: POST
+    uri: https://graph.windows.net/00000000-0000-0000-0000-000000000000/oauth2PermissionGrants?api-version=1.6
+  response:
+    body:
+      string: '{"odata.metadata":"https://graph.windows.net/00000000-0000-0000-0000-000000000000/$metadata#oauth2PermissionGrants/@Element","clientId":"1e9e699a-670d-4916-9040-151b72b36a94","consentType":"AllPrincipals","expiryTime":"2021-05-05T10:23:34.799463","objectId":"mmmeHg1nFkmQQBUbcrNqlCMmBYSEG4VDvkKE0A9LL2A","principalId":null,"resourceId":"84052623-1b84-4385-be42-84d00f4b2f60","scope":"User.Read","startTime":"2020-05-05T10:23:34.799463"}'
+    headers:
+      access-control-allow-origin:
+      - '*'
+      cache-control:
+      - no-cache
+      content-length:
+      - '436'
+      content-type:
+      - application/json; odata=minimalmetadata; streaming=true; charset=utf-8
+      dataserviceversion:
+      - 3.0;
+      date:
+      - Tue, 05 May 2020 10:23:34 GMT
+      duration:
+      - '2604836'
+      expires:
+      - '-1'
+      location:
+      - https://graph.windows.net/00000000-0000-0000-0000-000000000000/oauth2PermissionGrants/mmmeHg1nFkmQQBUbcrNqlCMmBYSEG4VDvkKE0A9LL2A
+      ocp-aad-diagnostics-server-name:
+      - lQ83keCxA2HS5OLHoMPNxSIzIscxMnbYNt94X8zLp5Q=
+      ocp-aad-session-key:
+      - 68Yxj4Q_mznme-YqBdxVILXs45XYTMjY2M5DBy-TLvnO8vNbXhhtkTYKCVLwIf3kZ7sX3erf5jPlEUb91ITkljJH3XnygztFoydAfgKcY8D1yzH0v_Ugmopb8s47rvSj4mstd3DLFFNytXHOCK4RNTaYVbiliLu6I18Q7ym08TKlv8XAHSV71h5ovD2cWmw3_qxB-sKjGh9_7iBX8fETBA.CnkbBiS_Err5mNY64wYZm6QymmP4rX41XrVw2oMBJ_A
+      pragma:
+      - no-cache
+      request-id:
+      - 416fd927-c900-413e-b02a-f5fde677bb9b
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-aspnet-version:
+      - 4.0.30319
+      x-ms-dirapi-data-contract-version:
+      - '1.6'
+      x-powered-by:
+      - ASP.NET
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - ad app permission list-grants
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - --id
+      User-Agent:
+      - python/3.7.2 (Windows-10-10.0.18362-SP0) requests/2.23.0 msrest/0.5.4 msrest_azure/0.6.3
+        azure-graphrbac/0.60.0 Azure-SDK-For-Python AZURECLI/2.5.1
+      accept-language:
+      - en-US
+    method: GET
+    uri: https://graph.windows.net/00000000-0000-0000-0000-000000000000/servicePrincipals?$filter=servicePrincipalNames%2Fany%28c%3Ac%20eq%20%27bfc17ae7-4e49-4149-bcac-3494ca5b8996%27%29%20or%20objectId%20eq%20%27bfc17ae7-4e49-4149-bcac-3494ca5b8996%27&api-version=1.6
+  response:
+    body:
+      string: '{"odata.metadata":"https://graph.windows.net/00000000-0000-0000-0000-000000000000/$metadata#directoryObjects","value":[{"odata.type":"Microsoft.DirectoryServices.ServicePrincipal","objectType":"ServicePrincipal","objectId":"1e9e699a-670d-4916-9040-151b72b36a94","deletionTimestamp":null,"accountEnabled":true,"addIns":[],"alternativeNames":[],"appDisplayName":"cli-app-000001","appId":"bfc17ae7-4e49-4149-bcac-3494ca5b8996","applicationTemplateId":null,"appOwnerTenantId":"1c411c5e-78cc-4e89-af5e-169408a540b8","appRoleAssignmentRequired":false,"appRoles":[],"displayName":"cli-app-000001","errorUrl":null,"homepage":"https://cli-app-000001","informationalUrls":{"termsOfService":null,"support":null,"privacy":null,"marketing":null},"keyCredentials":[],"logoutUrl":null,"notificationEmailAddresses":[],"oauth2Permissions":[{"adminConsentDescription":"Allow
+        the application to access cli-app-000001 on behalf of the signed-in user.","adminConsentDisplayName":"Access
+        cli-app-000001","id":"d53412d6-424d-4a3d-9750-d6fd07d84915","isEnabled":true,"type":"User","userConsentDescription":"Allow
+        the application to access cli-app-000001 on your behalf.","userConsentDisplayName":"Access
+        cli-app-000001","value":"user_impersonation"}],"passwordCredentials":[],"preferredSingleSignOnMode":null,"preferredTokenSigningKeyEndDateTime":null,"preferredTokenSigningKeyThumbprint":null,"publisherName":"PHSIGNOR","replyUrls":[],"samlMetadataUrl":null,"samlSingleSignOnSettings":null,"servicePrincipalNames":["http://cli-app-000001","bfc17ae7-4e49-4149-bcac-3494ca5b8996"],"servicePrincipalType":"Application","signInAudience":"AzureADMyOrg","tags":[],"tokenEncryptionKeyId":null}]}'
+    headers:
+      access-control-allow-origin:
+      - '*'
+      cache-control:
+      - no-cache
+      content-length:
+      - '1673'
+      content-type:
+      - application/json; odata=minimalmetadata; streaming=true; charset=utf-8
+      dataserviceversion:
+      - 3.0;
+      date:
+      - Tue, 05 May 2020 10:23:35 GMT
+      duration:
+      - '1028532'
+      expires:
+      - '-1'
+      ocp-aad-diagnostics-server-name:
+      - tkmBDfaAYZHUOl1TuUM3bD+Q7lT7bgEuiaD2BpQu0qE=
+      ocp-aad-session-key:
+      - 9RONfM75ug0RdhfrUzhdWEzK6YvyiPaI6XWK59Zwbe08UK4-JpImyrEePJtwMnVb0IJsk-i1AbG5TKghgxzJBGONZyjGdJWqMvaFGj0LMlLmgiAjeBr-DocJnLxjIXxpXmI47pK1PcYVuNNxrsKuGAaSwTUJzWwr4h0amv-Bb0rUt-8-nxGOrdHs4B0q8bQcsutuYoiT2mn54Zv3-AdTpA.LxXWBnAmm2IJ_HwjYvLfq6Lmy-iSakYgaqjwDL_4nv0
+      pragma:
+      - no-cache
+      request-id:
+      - b16d6fe4-df22-419a-b36e-e2473af1d52b
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-aspnet-version:
+      - 4.0.30319
+      x-ms-dirapi-data-contract-version:
+      - '1.6'
+      x-powered-by:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - ad app permission list-grants
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - --id
+      User-Agent:
+      - python/3.7.2 (Windows-10-10.0.18362-SP0) requests/2.23.0 msrest/0.5.4 msrest_azure/0.6.3
+        azure-graphrbac/0.60.0 Azure-SDK-For-Python AZURECLI/2.5.1
+      accept-language:
+      - en-US
+    method: GET
+    uri: https://graph.windows.net/00000000-0000-0000-0000-000000000000/oauth2PermissionGrants?$filter=clientId%20eq%20%271e9e699a-670d-4916-9040-151b72b36a94%27&api-version=1.6
+  response:
+    body:
+      string: '{"odata.metadata":"https://graph.windows.net/00000000-0000-0000-0000-000000000000/$metadata#oauth2PermissionGrants","value":[{"clientId":"1e9e699a-670d-4916-9040-151b72b36a94","consentType":"AllPrincipals","expiryTime":"2021-05-05T10:23:34.799463","objectId":"mmmeHg1nFkmQQBUbcrNqlCMmBYSEG4VDvkKE0A9LL2A","principalId":null,"resourceId":"84052623-1b84-4385-be42-84d00f4b2f60","scope":"User.Read","startTime":"2020-05-05T10:23:34.799463"}]}'
+    headers:
+      access-control-allow-origin:
+      - '*'
+      cache-control:
+      - no-cache
+      content-length:
+      - '439'
+      content-type:
+      - application/json; odata=minimalmetadata; streaming=true; charset=utf-8
+      dataserviceversion:
+      - 3.0;
+      date:
+      - Tue, 05 May 2020 10:23:36 GMT
+      duration:
+      - '980821'
+      expires:
+      - '-1'
+      ocp-aad-diagnostics-server-name:
+      - w8mNMRD2a/wXQgZmxpFGQcA1TXt9YXFaDveiLK6jL2Y=
+      ocp-aad-session-key:
+      - QKcmSbdkbOcPB6fnUHEO7ock6YMKFhKHVMSU8J3QtOcD_bvBq-mQ1YBl4ILN1Y7-spgPFYJf2H49jRShURwGG67ikKOGgcU7CmMO8FP0dvh-9AbvvZ6ajkLg8hzawJTFEYYNkpQUuQBqIXdW3Gp2dsy-2cHiMEQKwX8JbW0NitVA74YRzAb3GB-JOgqhy91QroZuvoTcFWUcZ-ME1u7tyQ.KPnKQTAwkQ5Kdf7UYJF59ZZx7J47hZ1YY66s-_pXmDU
+      pragma:
+      - no-cache
+      request-id:
+      - 48cfde29-9973-4676-a217-f7f761280491
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-aspnet-version:
+      - 4.0.30319
+      x-ms-dirapi-data-contract-version:
+      - '1.6'
+      x-powered-by:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - ad app permission list-grants
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - --id --show-resource-name
+      User-Agent:
+      - python/3.7.2 (Windows-10-10.0.18362-SP0) requests/2.23.0 msrest/0.5.4 msrest_azure/0.6.3
+        azure-graphrbac/0.60.0 Azure-SDK-For-Python AZURECLI/2.5.1
+      accept-language:
+      - en-US
+    method: GET
+    uri: https://graph.windows.net/00000000-0000-0000-0000-000000000000/servicePrincipals?$filter=servicePrincipalNames%2Fany%28c%3Ac%20eq%20%27bfc17ae7-4e49-4149-bcac-3494ca5b8996%27%29%20or%20objectId%20eq%20%27bfc17ae7-4e49-4149-bcac-3494ca5b8996%27&api-version=1.6
+  response:
+    body:
+      string: '{"odata.metadata":"https://graph.windows.net/00000000-0000-0000-0000-000000000000/$metadata#directoryObjects","value":[{"odata.type":"Microsoft.DirectoryServices.ServicePrincipal","objectType":"ServicePrincipal","objectId":"1e9e699a-670d-4916-9040-151b72b36a94","deletionTimestamp":null,"accountEnabled":true,"addIns":[],"alternativeNames":[],"appDisplayName":"cli-app-000001","appId":"bfc17ae7-4e49-4149-bcac-3494ca5b8996","applicationTemplateId":null,"appOwnerTenantId":"1c411c5e-78cc-4e89-af5e-169408a540b8","appRoleAssignmentRequired":false,"appRoles":[],"displayName":"cli-app-000001","errorUrl":null,"homepage":"https://cli-app-000001","informationalUrls":{"termsOfService":null,"support":null,"privacy":null,"marketing":null},"keyCredentials":[],"logoutUrl":null,"notificationEmailAddresses":[],"oauth2Permissions":[{"adminConsentDescription":"Allow
+        the application to access cli-app-000001 on behalf of the signed-in user.","adminConsentDisplayName":"Access
+        cli-app-000001","id":"d53412d6-424d-4a3d-9750-d6fd07d84915","isEnabled":true,"type":"User","userConsentDescription":"Allow
+        the application to access cli-app-000001 on your behalf.","userConsentDisplayName":"Access
+        cli-app-000001","value":"user_impersonation"}],"passwordCredentials":[],"preferredSingleSignOnMode":null,"preferredTokenSigningKeyEndDateTime":null,"preferredTokenSigningKeyThumbprint":null,"publisherName":"PHSIGNOR","replyUrls":[],"samlMetadataUrl":null,"samlSingleSignOnSettings":null,"servicePrincipalNames":["http://cli-app-000001","bfc17ae7-4e49-4149-bcac-3494ca5b8996"],"servicePrincipalType":"Application","signInAudience":"AzureADMyOrg","tags":[],"tokenEncryptionKeyId":null}]}'
+    headers:
+      access-control-allow-origin:
+      - '*'
+      cache-control:
+      - no-cache
+      content-length:
+      - '1673'
+      content-type:
+      - application/json; odata=minimalmetadata; streaming=true; charset=utf-8
+      dataserviceversion:
+      - 3.0;
+      date:
+      - Tue, 05 May 2020 10:23:36 GMT
+      duration:
+      - '2021214'
+      expires:
+      - '-1'
+      ocp-aad-diagnostics-server-name:
+      - PWIvhJ0jRiV2rN03lTYGStFZKxd8ngSwxJn8mfJY/gg=
+      ocp-aad-session-key:
+      - mM74ItqTTO1FNmLravzRjAhg0Ahr9lWuVZwyegICaDygPBEPQMAhtDnugTrJr_tf1WUcu7LAim5fxqqsPnlz_WtOn0h46WA43qMFQBHCYZxiSSU2uKKedrdLQzWgOmIOhRYEnBFQ5iit6AchUXe756Ea5K7BHgUR3-YgGPkH2tpILkytROJIrDxFU6JpP_yJolAzDF_hFUxZ7Cqgzo9OVQ.rZELyjrFDWqIqAurlDk-WmjsdDOoeRsyMfob_Pgasfg
+      pragma:
+      - no-cache
+      request-id:
+      - 7267a32b-c2f2-462d-94a0-60ada51137ea
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-aspnet-version:
+      - 4.0.30319
+      x-ms-dirapi-data-contract-version:
+      - '1.6'
+      x-powered-by:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - ad app permission list-grants
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - --id --show-resource-name
+      User-Agent:
+      - python/3.7.2 (Windows-10-10.0.18362-SP0) requests/2.23.0 msrest/0.5.4 msrest_azure/0.6.3
+        azure-graphrbac/0.60.0 Azure-SDK-For-Python AZURECLI/2.5.1
+      accept-language:
+      - en-US
+    method: GET
+    uri: https://graph.windows.net/00000000-0000-0000-0000-000000000000/oauth2PermissionGrants?$filter=clientId%20eq%20%271e9e699a-670d-4916-9040-151b72b36a94%27&api-version=1.6
+  response:
+    body:
+      string: '{"odata.metadata":"https://graph.windows.net/00000000-0000-0000-0000-000000000000/$metadata#oauth2PermissionGrants","value":[{"clientId":"1e9e699a-670d-4916-9040-151b72b36a94","consentType":"AllPrincipals","expiryTime":"2021-05-05T10:23:34.799463","objectId":"mmmeHg1nFkmQQBUbcrNqlCMmBYSEG4VDvkKE0A9LL2A","principalId":null,"resourceId":"84052623-1b84-4385-be42-84d00f4b2f60","scope":"User.Read","startTime":"2020-05-05T10:23:34.799463"}]}'
+    headers:
+      access-control-allow-origin:
+      - '*'
+      cache-control:
+      - no-cache
+      content-length:
+      - '439'
+      content-type:
+      - application/json; odata=minimalmetadata; streaming=true; charset=utf-8
+      dataserviceversion:
+      - 3.0;
+      date:
+      - Tue, 05 May 2020 10:23:37 GMT
+      duration:
+      - '2030818'
+      expires:
+      - '-1'
+      ocp-aad-diagnostics-server-name:
+      - 6nBoHwpdsKDi8gaIj2ePYRXBaTpCixMWvCS5seJAk4I=
+      ocp-aad-session-key:
+      - PMLCtIyrr91caoy5Kuooe-v8pXA0sf21altQWRNMyqJSKfYIvFiU9jJuG8NEkB--C_0gKJ3zKBsTSEjJLRRT59uHT1lizegusgyW7_b_CC2I-T5NKZBfmbVhSFkc7NIamk9tuLyMLaK4AaqVO0K3XkjHrqFJsKKDNyQxYYEwB8l6k3fJCrOo3Vy0mZJYOrIbzcSUdt80sBuXXjwgrKJO1g.jhZ1bM8xI0eNQIxU6wnEe1BqIBtIabQmLUbei6BPDvc
+      pragma:
+      - no-cache
+      request-id:
+      - 1cb29a3e-5a77-496d-a582-560f972aba98
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-aspnet-version:
+      - 4.0.30319
+      x-ms-dirapi-data-contract-version:
+      - '1.6'
+      x-powered-by:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - ad app permission list-grants
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - --id --show-resource-name
+      User-Agent:
+      - python/3.7.2 (Windows-10-10.0.18362-SP0) requests/2.23.0 msrest/0.5.4 msrest_azure/0.6.3
+        azure-graphrbac/0.60.0 Azure-SDK-For-Python AZURECLI/2.5.1
+      accept-language:
+      - en-US
+    method: GET
+    uri: https://graph.windows.net/00000000-0000-0000-0000-000000000000/servicePrincipals/84052623-1b84-4385-be42-84d00f4b2f60?api-version=1.6
+  response:
+    body:
+      string: '{"odata.metadata":"https://graph.windows.net/00000000-0000-0000-0000-000000000000/$metadata#directoryObjects/@Element","odata.type":"Microsoft.DirectoryServices.ServicePrincipal","objectType":"ServicePrincipal","objectId":"84052623-1b84-4385-be42-84d00f4b2f60","deletionTimestamp":null,"accountEnabled":true,"addIns":[],"alternativeNames":[],"appDisplayName":"Windows
+        Azure Active Directory","appId":"00000002-0000-0000-c000-000000000000","applicationTemplateId":null,"appOwnerTenantId":"f8cdef31-a31e-4b4a-93e4-5f571e91255a","appRoleAssignmentRequired":false,"appRoles":[{"allowedMemberTypes":["Application"],"description":"Allows
+        the app to read all your organization''s policies without a signed-in user.
+        ","displayName":"Read your organization''s policies","id":"6c2d1b1d-a490-4178-ba6b-7efceda9129b","isEnabled":true,"value":"Policy.Read.All"},{"allowedMemberTypes":["Application"],"description":"Allows
+        the app to read data in your company or school directory, such as users, groups,
+        and apps.","displayName":"Read directory data","id":"5778995a-e1bf-45b8-affa-663a9f3f4d04","isEnabled":true,"value":"Directory.Read.All"},{"allowedMemberTypes":["Application"],"description":"Allows
+        the app to read and write all domain properties without a signed in user.  Also
+        allows the app to add,  verify and remove domains.","displayName":"Read and
+        write domains","id":"abefe9df-d5a9-41c6-a60b-27b38eac3efb","isEnabled":true,"value":"Domain.ReadWrite.All"},{"allowedMemberTypes":["Application"],"description":"Allows
+        the app to read and write data in your company or school directory, such as
+        users, and groups.  Does not allow user or group deletion.","displayName":"Read
+        and write directory data","id":"78c8a3c8-a07e-4b9e-af1b-b5ccab50a175","isEnabled":true,"value":"Directory.ReadWrite.All"},{"allowedMemberTypes":["Application"],"description":"Allows
+        the app to read and write all device properties without a signed in user.  Does
+        not allow device creation, device deletion or update of device alternative
+        security identifiers.","displayName":"Read and write devices","id":"1138cb37-bd11-4084-a2b7-9f71582aeddb","isEnabled":true,"value":"Device.ReadWrite.All"},{"allowedMemberTypes":["Application"],"description":"Allows
+        the app to read the memberships of hidden groups and administrative units
+        without a signed-in user.","displayName":"Read all hidden memberships","id":"9728c0c4-a06b-4e0e-8d1b-3d694e8ec207","isEnabled":true,"value":"Member.Read.Hidden"},{"allowedMemberTypes":["Application"],"description":"Allows
+        the app to create other applications, and fully manage those applications
+        (read, update, update application secrets and delete), without a signed-in
+        user.  It cannot update any apps that it is not an owner of.","displayName":"Manage
+        apps that this app creates or owns","id":"824c81eb-e3f8-4ee6-8f6d-de7f50d565b7","isEnabled":true,"value":"Application.ReadWrite.OwnedBy"},{"allowedMemberTypes":["Application"],"description":"Allows
+        the app to create, read, update and delete applications and service principals
+        without a signed-in user.  Does not allow management of consent grants.","displayName":"Read
+        and write all applications","id":"1cda74f2-2616-4834-b122-5cb1b07f8a59","isEnabled":true,"value":"Application.ReadWrite.All"},{"allowedMemberTypes":["Application"],"description":"Allows
+        the app to read and write all domain properties without a signed in user.  Also
+        allows the app to add,  verify and remove domains.","displayName":"Read and
+        write domains","id":"aaff0dfd-0295-48b6-a5cc-9f465bc87928","isEnabled":true,"value":"Domain.ReadWrite.All"}],"displayName":"Windows
+        Azure Active Directory","errorUrl":null,"homepage":null,"informationalUrls":{"termsOfService":null,"support":null,"privacy":null,"marketing":null},"keyCredentials":[],"logoutUrl":null,"notificationEmailAddresses":[],"oauth2Permissions":[{"adminConsentDescription":"Allows
+        the app to read your organization''s policies on behalf of the signed-in user.","adminConsentDisplayName":"Read
+        your organization''s policies","id":"80e5b1bf-3ad0-4365-943a-0ec983009b67","isEnabled":true,"type":"Admin","userConsentDescription":"Allows
+        the app to read your organization''s policies on your behalf.","userConsentDisplayName":"Read
+        your organization''s policies","value":"Policy.Read.All"},{"adminConsentDescription":"Allows
+        the app to have the same access to information in the directory as the signed-in
+        user.","adminConsentDisplayName":"Access the directory as the signed-in user","id":"a42657d6-7f20-40e3-b6f0-cee03008a62a","isEnabled":true,"type":"User","userConsentDescription":"Allows
+        the app to have the same access to information in your work or school directory
+        as you do.","userConsentDisplayName":"Access the directory as you","value":"Directory.AccessAsUser.All"},{"adminConsentDescription":"Allows
+        the app to read data in your company or school directory, such as users, groups,
+        and apps.","adminConsentDisplayName":"Read directory data","id":"5778995a-e1bf-45b8-affa-663a9f3f4d04","isEnabled":true,"type":"Admin","userConsentDescription":"Allows
+        the app to read data in your company or school directory, such as other users,
+        groups and apps.","userConsentDisplayName":"Read directory data","value":"Directory.Read.All"},{"adminConsentDescription":"Allows
+        the app to read and write data in your company or school directory, such as
+        users, and groups.  Does not allow user or group deletion.","adminConsentDisplayName":"Read
+        and write directory data","id":"78c8a3c8-a07e-4b9e-af1b-b5ccab50a175","isEnabled":true,"type":"Admin","userConsentDescription":"Allows
+        the app to read and write data in your company or school directory, such as
+        other users, groups.  Does not allow user or group deletion on your behalf.","userConsentDisplayName":"Read
+        and write directory data","value":"Directory.ReadWrite.All"},{"adminConsentDescription":"Allows
+        the app to create groups on behalf of the signed-in user and read all group
+        properties and memberships. Additionally, this allows the app to update group
+        properties and memberships for the groups the signed-in user owns.","adminConsentDisplayName":"Read
+        and write all groups","id":"970d6fa6-214a-4a9b-8513-08fad511e2fd","isEnabled":true,"type":"Admin","userConsentDescription":"Allows
+        the app to create groups on your behalf and read all group properties and
+        memberships. Additionally, this allows the app to update group properties
+        and memberships for groups you own.","userConsentDisplayName":"Read and write
+        all groups","value":"Group.ReadWrite.All"},{"adminConsentDescription":"Allows
+        the app to read basic group properties and memberships on behalf of the signed-in
+        user.","adminConsentDisplayName":"Read all groups","id":"6234d376-f627-4f0f-90e0-dff25c5211a3","isEnabled":true,"type":"Admin","userConsentDescription":"Allows
+        the app to read all group properties and memberships on your behalf.","userConsentDisplayName":"Read
+        all groups","value":"Group.Read.All"},{"adminConsentDescription":"Allows the
+        app to read the full set of profile properties of all users in your company
+        or school, on behalf of the signed-in user. Additionally, this allows the
+        app to read the profiles of the signed-in user''s reports and manager.","adminConsentDisplayName":"Read
+        all users'' full profiles","id":"c582532d-9d9e-43bd-a97c-2667a28ce295","isEnabled":true,"type":"Admin","userConsentDescription":"Allows
+        the app to read the full set of profile properties of all users in your company
+        or school, on your behalf.  Additionally, this allows the app to read the
+        profiles of your reports and manager.","userConsentDisplayName":"Read all
+        user''s full profiles","value":"User.Read.All"},{"adminConsentDescription":"Allows
+        the app to read a basic set of profile properties of all users in your company
+        or school on behalf of the signed-in user. Includes display name, first and
+        last name, photo, and email address. Additionally, this allows the app to
+        read basic info about the signed-in user''s reports and manager.","adminConsentDisplayName":"Read
+        all users'' basic profiles","id":"cba73afc-7f69-4d86-8450-4978e04ecd1a","isEnabled":true,"type":"User","userConsentDescription":"Allows
+        the app to read a basic set of profile properties of other users in your company
+        or school, on your behalf. Includes display name, first and last name, photo,
+        and email address. Additionally, this allows the app to read basic info about
+        your reports and manager.","userConsentDisplayName":"Read all user''s basic
+        profiles","value":"User.ReadBasic.All"},{"adminConsentDescription":"Allows
+        users to sign in to the app, and allows the app to read the profile of signed-in
+        users. It also allow the app to read basic company information of signed-in
+        users.","adminConsentDisplayName":"Sign in and read user profile","id":"311a71cc-e848-46a1-bdf8-97ff7156d8e6","isEnabled":true,"type":"User","userConsentDescription":"Allows
+        you to sign in to the app with your work account and let the app read your
+        profile. It also allows the app to read basic company information.","userConsentDisplayName":"Sign
+        you in and read your profile","value":"User.Read"},{"adminConsentDescription":"Allows
+        the app to read the memberships of hidden groups and administrative units
+        on behalf of the signed-in user, for those hidden groups and administrative
+        units that the signed-in user has access to.","adminConsentDisplayName":"Read
+        hidden memberships","id":"2d05a661-f651-4d57-a595-489c91eda336","isEnabled":true,"type":"Admin","userConsentDescription":"Allows
+        the app to read the memberships of hidden groups or administrative units on
+        your behalf, for those hidden groups or administrative units that you have
+        access to.","userConsentDisplayName":"Read your hidden memberships","value":"Member.Read.Hidden"}],"passwordCredentials":[],"preferredSingleSignOnMode":null,"preferredTokenSigningKeyEndDateTime":null,"preferredTokenSigningKeyThumbprint":null,"publisherName":null,"replyUrls":[],"samlMetadataUrl":null,"samlSingleSignOnSettings":null,"servicePrincipalNames":["00000002-0000-0000-c000-000000000000/graph.microsoftazure.us","https://graph.microsoftazure.us","https://graph.windows.net/","https://graph.windows.net","00000002-0000-0000-c000-000000000000/graph.windows.net","00000002-0000-0000-c000-000000000000/directory.windows.net","00000002-0000-0000-c000-000000000000"],"servicePrincipalType":"Application","signInAudience":"AzureADMultipleOrgs","tags":[],"tokenEncryptionKeyId":null}'
+    headers:
+      access-control-allow-origin:
+      - '*'
+      cache-control:
+      - no-cache
+      content-length:
+      - '10364'
+      content-type:
+      - application/json; odata=minimalmetadata; streaming=true; charset=utf-8
+      dataserviceversion:
+      - 3.0;
+      date:
+      - Tue, 05 May 2020 10:23:38 GMT
+      duration:
+      - '720157'
+      expires:
+      - '-1'
+      ocp-aad-diagnostics-server-name:
+      - CAMZsfQrW/Db0BzE1JISpfV4Gl2govAIVWxqDzMOBPI=
+      ocp-aad-session-key:
+      - dMlUWEmcKnDpc1c4K_5XkFHKLFjkvyB3Jfs3xHBr6zsetBUsjX0XyivGESpC2yFe8EGoE6vyfWTPaTNGLSWoADoC6mjiR0NvfqRBoiyawIMpRKqgOjZeaEY42f0XyJT5oE5wVLpkdiCn_3-9zwPZoNj4AVok_iOcYYhVhgQE5wEFLhPzSEQauSLe4ymhhD21bqiHrH0lltdWZMCYqomv5A.ntpiPMb-bOq6eHEuIfL65e-sc0HFc0pJZTKRNFJWHOc
+      pragma:
+      - no-cache
+      request-id:
+      - d9477f0f-6132-4e2d-9482-69081b53a4dd
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-aspnet-version:
+      - 4.0.30319
+      x-ms-dirapi-data-contract-version:
+      - '1.6'
+      x-powered-by:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - ad app permission grant
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - --id --api --scope
+      User-Agent:
+      - python/3.7.2 (Windows-10-10.0.18362-SP0) requests/2.23.0 msrest/0.5.4 msrest_azure/0.6.3
+        azure-graphrbac/0.60.0 Azure-SDK-For-Python AZURECLI/2.5.1
+      accept-language:
+      - en-US
+    method: GET
+    uri: https://graph.windows.net/00000000-0000-0000-0000-000000000000/servicePrincipals?$filter=servicePrincipalNames%2Fany%28c%3Ac%20eq%20%27bfc17ae7-4e49-4149-bcac-3494ca5b8996%27%29%20or%20objectId%20eq%20%27bfc17ae7-4e49-4149-bcac-3494ca5b8996%27&api-version=1.6
+  response:
+    body:
+      string: '{"odata.metadata":"https://graph.windows.net/00000000-0000-0000-0000-000000000000/$metadata#directoryObjects","value":[{"odata.type":"Microsoft.DirectoryServices.ServicePrincipal","objectType":"ServicePrincipal","objectId":"1e9e699a-670d-4916-9040-151b72b36a94","deletionTimestamp":null,"accountEnabled":true,"addIns":[],"alternativeNames":[],"appDisplayName":"cli-app-000001","appId":"bfc17ae7-4e49-4149-bcac-3494ca5b8996","applicationTemplateId":null,"appOwnerTenantId":"1c411c5e-78cc-4e89-af5e-169408a540b8","appRoleAssignmentRequired":false,"appRoles":[],"displayName":"cli-app-000001","errorUrl":null,"homepage":"https://cli-app-000001","informationalUrls":{"termsOfService":null,"support":null,"privacy":null,"marketing":null},"keyCredentials":[],"logoutUrl":null,"notificationEmailAddresses":[],"oauth2Permissions":[{"adminConsentDescription":"Allow
+        the application to access cli-app-000001 on behalf of the signed-in user.","adminConsentDisplayName":"Access
+        cli-app-000001","id":"d53412d6-424d-4a3d-9750-d6fd07d84915","isEnabled":true,"type":"User","userConsentDescription":"Allow
+        the application to access cli-app-000001 on your behalf.","userConsentDisplayName":"Access
+        cli-app-000001","value":"user_impersonation"}],"passwordCredentials":[],"preferredSingleSignOnMode":null,"preferredTokenSigningKeyEndDateTime":null,"preferredTokenSigningKeyThumbprint":null,"publisherName":"PHSIGNOR","replyUrls":[],"samlMetadataUrl":null,"samlSingleSignOnSettings":null,"servicePrincipalNames":["http://cli-app-000001","bfc17ae7-4e49-4149-bcac-3494ca5b8996"],"servicePrincipalType":"Application","signInAudience":"AzureADMyOrg","tags":[],"tokenEncryptionKeyId":null}]}'
+    headers:
+      access-control-allow-origin:
+      - '*'
+      cache-control:
+      - no-cache
+      content-length:
+      - '1673'
+      content-type:
+      - application/json; odata=minimalmetadata; streaming=true; charset=utf-8
+      dataserviceversion:
+      - 3.0;
+      date:
+      - Tue, 05 May 2020 10:23:38 GMT
+      duration:
+      - '1456889'
+      expires:
+      - '-1'
+      ocp-aad-diagnostics-server-name:
+      - DVBGikDqdRnBm6KJAyFQeTQ/F9Z70euoZqrhcRlTS34=
+      ocp-aad-session-key:
+      - VVWcAoPPr2wsExLWuHXQp5IMwHSTQdOADmt66Lfv-TElUJhjBxsdiTMEv0ZgvUqn4gjPREz1LLub5vUaBXyTcfxXwFMyhfPtNPbx3n9KLqBfRmAyp8W4_oS9dZec2X_e--sQeW9nHtFYTpKMyLjVyWyTZXaZBjfkQokWKJYDWczUbD0z2AMv-rbWsbRXa_aClalKd-EsMgxdXCE2BihWpw.B7lUWD1OmPilzkPNCMgUK9MFMVF6klb8_AH_6tjCfF8
+      pragma:
+      - no-cache
+      request-id:
+      - d1e9829e-3354-42a5-af82-ff5a030d6ffe
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-aspnet-version:
+      - 4.0.30319
+      x-ms-dirapi-data-contract-version:
+      - '1.6'
+      x-powered-by:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - ad app permission grant
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - --id --api --scope
+      User-Agent:
+      - python/3.7.2 (Windows-10-10.0.18362-SP0) requests/2.23.0 msrest/0.5.4 msrest_azure/0.6.3
+        azure-graphrbac/0.60.0 Azure-SDK-For-Python AZURECLI/2.5.1
+      accept-language:
+      - en-US
+    method: GET
+    uri: https://graph.windows.net/00000000-0000-0000-0000-000000000000/servicePrincipals?$filter=servicePrincipalNames%2Fany%28c%3Ac%20eq%20%2700000002-0000-0000-c000-000000000000%27%29%20or%20objectId%20eq%20%2700000002-0000-0000-c000-000000000000%27&api-version=1.6
+  response:
+    body:
+      string: '{"odata.metadata":"https://graph.windows.net/00000000-0000-0000-0000-000000000000/$metadata#directoryObjects","value":[{"odata.type":"Microsoft.DirectoryServices.ServicePrincipal","objectType":"ServicePrincipal","objectId":"84052623-1b84-4385-be42-84d00f4b2f60","deletionTimestamp":null,"accountEnabled":true,"addIns":[],"alternativeNames":[],"appDisplayName":"Windows
+        Azure Active Directory","appId":"00000002-0000-0000-c000-000000000000","applicationTemplateId":null,"appOwnerTenantId":"f8cdef31-a31e-4b4a-93e4-5f571e91255a","appRoleAssignmentRequired":false,"appRoles":[{"allowedMemberTypes":["Application"],"description":"Allows
+        the app to read all your organization''s policies without a signed-in user.
+        ","displayName":"Read your organization''s policies","id":"6c2d1b1d-a490-4178-ba6b-7efceda9129b","isEnabled":true,"value":"Policy.Read.All"},{"allowedMemberTypes":["Application"],"description":"Allows
+        the app to read data in your company or school directory, such as users, groups,
+        and apps.","displayName":"Read directory data","id":"5778995a-e1bf-45b8-affa-663a9f3f4d04","isEnabled":true,"value":"Directory.Read.All"},{"allowedMemberTypes":["Application"],"description":"Allows
+        the app to read and write all domain properties without a signed in user.  Also
+        allows the app to add,  verify and remove domains.","displayName":"Read and
+        write domains","id":"abefe9df-d5a9-41c6-a60b-27b38eac3efb","isEnabled":true,"value":"Domain.ReadWrite.All"},{"allowedMemberTypes":["Application"],"description":"Allows
+        the app to read and write data in your company or school directory, such as
+        users, and groups.  Does not allow user or group deletion.","displayName":"Read
+        and write directory data","id":"78c8a3c8-a07e-4b9e-af1b-b5ccab50a175","isEnabled":true,"value":"Directory.ReadWrite.All"},{"allowedMemberTypes":["Application"],"description":"Allows
+        the app to read and write all device properties without a signed in user.  Does
+        not allow device creation, device deletion or update of device alternative
+        security identifiers.","displayName":"Read and write devices","id":"1138cb37-bd11-4084-a2b7-9f71582aeddb","isEnabled":true,"value":"Device.ReadWrite.All"},{"allowedMemberTypes":["Application"],"description":"Allows
+        the app to read the memberships of hidden groups and administrative units
+        without a signed-in user.","displayName":"Read all hidden memberships","id":"9728c0c4-a06b-4e0e-8d1b-3d694e8ec207","isEnabled":true,"value":"Member.Read.Hidden"},{"allowedMemberTypes":["Application"],"description":"Allows
+        the app to create other applications, and fully manage those applications
+        (read, update, update application secrets and delete), without a signed-in
+        user.  It cannot update any apps that it is not an owner of.","displayName":"Manage
+        apps that this app creates or owns","id":"824c81eb-e3f8-4ee6-8f6d-de7f50d565b7","isEnabled":true,"value":"Application.ReadWrite.OwnedBy"},{"allowedMemberTypes":["Application"],"description":"Allows
+        the app to create, read, update and delete applications and service principals
+        without a signed-in user.  Does not allow management of consent grants.","displayName":"Read
+        and write all applications","id":"1cda74f2-2616-4834-b122-5cb1b07f8a59","isEnabled":true,"value":"Application.ReadWrite.All"},{"allowedMemberTypes":["Application"],"description":"Allows
+        the app to read and write all domain properties without a signed in user.  Also
+        allows the app to add,  verify and remove domains.","displayName":"Read and
+        write domains","id":"aaff0dfd-0295-48b6-a5cc-9f465bc87928","isEnabled":true,"value":"Domain.ReadWrite.All"}],"displayName":"Windows
+        Azure Active Directory","errorUrl":null,"homepage":null,"informationalUrls":{"termsOfService":null,"support":null,"privacy":null,"marketing":null},"keyCredentials":[],"logoutUrl":null,"notificationEmailAddresses":[],"oauth2Permissions":[{"adminConsentDescription":"Allows
+        the app to read your organization''s policies on behalf of the signed-in user.","adminConsentDisplayName":"Read
+        your organization''s policies","id":"80e5b1bf-3ad0-4365-943a-0ec983009b67","isEnabled":true,"type":"Admin","userConsentDescription":"Allows
+        the app to read your organization''s policies on your behalf.","userConsentDisplayName":"Read
+        your organization''s policies","value":"Policy.Read.All"},{"adminConsentDescription":"Allows
+        the app to have the same access to information in the directory as the signed-in
+        user.","adminConsentDisplayName":"Access the directory as the signed-in user","id":"a42657d6-7f20-40e3-b6f0-cee03008a62a","isEnabled":true,"type":"User","userConsentDescription":"Allows
+        the app to have the same access to information in your work or school directory
+        as you do.","userConsentDisplayName":"Access the directory as you","value":"Directory.AccessAsUser.All"},{"adminConsentDescription":"Allows
+        the app to read data in your company or school directory, such as users, groups,
+        and apps.","adminConsentDisplayName":"Read directory data","id":"5778995a-e1bf-45b8-affa-663a9f3f4d04","isEnabled":true,"type":"Admin","userConsentDescription":"Allows
+        the app to read data in your company or school directory, such as other users,
+        groups and apps.","userConsentDisplayName":"Read directory data","value":"Directory.Read.All"},{"adminConsentDescription":"Allows
+        the app to read and write data in your company or school directory, such as
+        users, and groups.  Does not allow user or group deletion.","adminConsentDisplayName":"Read
+        and write directory data","id":"78c8a3c8-a07e-4b9e-af1b-b5ccab50a175","isEnabled":true,"type":"Admin","userConsentDescription":"Allows
+        the app to read and write data in your company or school directory, such as
+        other users, groups.  Does not allow user or group deletion on your behalf.","userConsentDisplayName":"Read
+        and write directory data","value":"Directory.ReadWrite.All"},{"adminConsentDescription":"Allows
+        the app to create groups on behalf of the signed-in user and read all group
+        properties and memberships. Additionally, this allows the app to update group
+        properties and memberships for the groups the signed-in user owns.","adminConsentDisplayName":"Read
+        and write all groups","id":"970d6fa6-214a-4a9b-8513-08fad511e2fd","isEnabled":true,"type":"Admin","userConsentDescription":"Allows
+        the app to create groups on your behalf and read all group properties and
+        memberships. Additionally, this allows the app to update group properties
+        and memberships for groups you own.","userConsentDisplayName":"Read and write
+        all groups","value":"Group.ReadWrite.All"},{"adminConsentDescription":"Allows
+        the app to read basic group properties and memberships on behalf of the signed-in
+        user.","adminConsentDisplayName":"Read all groups","id":"6234d376-f627-4f0f-90e0-dff25c5211a3","isEnabled":true,"type":"Admin","userConsentDescription":"Allows
+        the app to read all group properties and memberships on your behalf.","userConsentDisplayName":"Read
+        all groups","value":"Group.Read.All"},{"adminConsentDescription":"Allows the
+        app to read the full set of profile properties of all users in your company
+        or school, on behalf of the signed-in user. Additionally, this allows the
+        app to read the profiles of the signed-in user''s reports and manager.","adminConsentDisplayName":"Read
+        all users'' full profiles","id":"c582532d-9d9e-43bd-a97c-2667a28ce295","isEnabled":true,"type":"Admin","userConsentDescription":"Allows
+        the app to read the full set of profile properties of all users in your company
+        or school, on your behalf.  Additionally, this allows the app to read the
+        profiles of your reports and manager.","userConsentDisplayName":"Read all
+        user''s full profiles","value":"User.Read.All"},{"adminConsentDescription":"Allows
+        the app to read a basic set of profile properties of all users in your company
+        or school on behalf of the signed-in user. Includes display name, first and
+        last name, photo, and email address. Additionally, this allows the app to
+        read basic info about the signed-in user''s reports and manager.","adminConsentDisplayName":"Read
+        all users'' basic profiles","id":"cba73afc-7f69-4d86-8450-4978e04ecd1a","isEnabled":true,"type":"User","userConsentDescription":"Allows
+        the app to read a basic set of profile properties of other users in your company
+        or school, on your behalf. Includes display name, first and last name, photo,
+        and email address. Additionally, this allows the app to read basic info about
+        your reports and manager.","userConsentDisplayName":"Read all user''s basic
+        profiles","value":"User.ReadBasic.All"},{"adminConsentDescription":"Allows
+        users to sign in to the app, and allows the app to read the profile of signed-in
+        users. It also allow the app to read basic company information of signed-in
+        users.","adminConsentDisplayName":"Sign in and read user profile","id":"311a71cc-e848-46a1-bdf8-97ff7156d8e6","isEnabled":true,"type":"User","userConsentDescription":"Allows
+        you to sign in to the app with your work account and let the app read your
+        profile. It also allows the app to read basic company information.","userConsentDisplayName":"Sign
+        you in and read your profile","value":"User.Read"},{"adminConsentDescription":"Allows
+        the app to read the memberships of hidden groups and administrative units
+        on behalf of the signed-in user, for those hidden groups and administrative
+        units that the signed-in user has access to.","adminConsentDisplayName":"Read
+        hidden memberships","id":"2d05a661-f651-4d57-a595-489c91eda336","isEnabled":true,"type":"Admin","userConsentDescription":"Allows
+        the app to read the memberships of hidden groups or administrative units on
+        your behalf, for those hidden groups or administrative units that you have
+        access to.","userConsentDisplayName":"Read your hidden memberships","value":"Member.Read.Hidden"}],"passwordCredentials":[],"preferredSingleSignOnMode":null,"preferredTokenSigningKeyEndDateTime":null,"preferredTokenSigningKeyThumbprint":null,"publisherName":null,"replyUrls":[],"samlMetadataUrl":null,"samlSingleSignOnSettings":null,"servicePrincipalNames":["00000002-0000-0000-c000-000000000000/graph.microsoftazure.us","https://graph.microsoftazure.us","https://graph.windows.net/","https://graph.windows.net","00000002-0000-0000-c000-000000000000/graph.windows.net","00000002-0000-0000-c000-000000000000/directory.windows.net","00000002-0000-0000-c000-000000000000"],"servicePrincipalType":"Application","signInAudience":"AzureADMultipleOrgs","tags":[],"tokenEncryptionKeyId":null}]}'
+    headers:
+      access-control-allow-origin:
+      - '*'
+      cache-control:
+      - no-cache
+      content-length:
+      - '10367'
+      content-type:
+      - application/json; odata=minimalmetadata; streaming=true; charset=utf-8
+      dataserviceversion:
+      - 3.0;
+      date:
+      - Tue, 05 May 2020 10:23:38 GMT
+      duration:
+      - '754115'
+      expires:
+      - '-1'
+      ocp-aad-diagnostics-server-name:
+      - EgUVn3QksgciaLMrQ2LXaYQc7+RDl8fuz8QkLXfZlkE=
+      ocp-aad-session-key:
+      - lMTlPexJKWkBatX7i6qppxcGcoSahPhcTsH8XJcO3z9cP_EBwCjH2EN90l6FZnL7mW5SpmXxU_TaBD4lnaWruE1ZtwbS3RAGDoAtNUasA06BG8U7H90u5iN8T-LICE8Q5gHyHcEFOxjJPrQ98R-IDHCpqHPQGfJx0Myl_UOS6hQoB7g5S7utfYlw7pN7WOAOQ44cxNofNYf7bEdzyEK52Q.WjKWrIjYlFYr77G70wcyey4ynq5jI60gmqKvnhhNf4k
+      pragma:
+      - no-cache
+      request-id:
+      - f523d780-9537-41b4-867a-6911c03739ba
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-aspnet-version:
+      - 4.0.30319
+      x-ms-dirapi-data-contract-version:
+      - '1.6'
+      x-powered-by:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - ad app permission grant
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - --id --api --scope
+      User-Agent:
+      - python/3.7.2 (Windows-10-10.0.18362-SP0) requests/2.23.0 msrest/0.5.4 msrest_azure/0.6.3
+        azure-graphrbac/0.60.0 Azure-SDK-For-Python AZURECLI/2.5.1
+      accept-language:
+      - en-US
+    method: GET
+    uri: https://graph.windows.net/00000000-0000-0000-0000-000000000000/oauth2PermissionGrants?$filter=clientId%20eq%20%271e9e699a-670d-4916-9040-151b72b36a94%27&api-version=1.6
+  response:
+    body:
+      string: '{"odata.metadata":"https://graph.windows.net/00000000-0000-0000-0000-000000000000/$metadata#oauth2PermissionGrants","value":[{"clientId":"1e9e699a-670d-4916-9040-151b72b36a94","consentType":"AllPrincipals","expiryTime":"2021-05-05T10:23:34.799463","objectId":"mmmeHg1nFkmQQBUbcrNqlCMmBYSEG4VDvkKE0A9LL2A","principalId":null,"resourceId":"84052623-1b84-4385-be42-84d00f4b2f60","scope":"User.Read","startTime":"2020-05-05T10:23:34.799463"}]}'
+    headers:
+      access-control-allow-origin:
+      - '*'
+      cache-control:
+      - no-cache
+      content-length:
+      - '439'
+      content-type:
+      - application/json; odata=minimalmetadata; streaming=true; charset=utf-8
+      dataserviceversion:
+      - 3.0;
+      date:
+      - Tue, 05 May 2020 10:23:39 GMT
+      duration:
+      - '665550'
+      expires:
+      - '-1'
+      ocp-aad-diagnostics-server-name:
+      - rquKeM2W3duzRdZOIcdoAEYYGaBW1nrfSbcuIpQeJxM=
+      ocp-aad-session-key:
+      - _UTjOdSVmxJqBvjlfhx9sVNm9wuIR1IAf-gfvGnZV--gtoUi7dmWUa36Ku_qb9YRZfOQASm2Z2V5I-pgfSx0IkJYHdjpOjr_fQpAvKhfHQz33gyq9vy7OF_flmfmLqB0TucQvYepS_GnzOaF4_mUvumPKSl7pc6upzYWClNYIUSwTTl_oKeBjYO9Eu-fw-pbXJ3taHb9XnExUQQBx8FkXg.fqB1t8oqSBwgQo7EMReslLLIGW9wovo9AOFeMLOLRdM
+      pragma:
+      - no-cache
+      request-id:
+      - 98ea7798-6d00-4bbb-abdb-782fc7ad79b5
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-aspnet-version:
+      - 4.0.30319
+      x-ms-dirapi-data-contract-version:
+      - '1.6'
+      x-powered-by:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - ad app permission grant
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      ParameterSetName:
+      - --id --api --scope
+      User-Agent:
+      - python/3.7.2 (Windows-10-10.0.18362-SP0) requests/2.23.0 msrest/0.5.4 msrest_azure/0.6.3
+        azure-graphrbac/0.60.0 Azure-SDK-For-Python AZURECLI/2.5.1
+      accept-language:
+      - en-US
+    method: DELETE
+    uri: https://graph.windows.net/00000000-0000-0000-0000-000000000000/oauth2PermissionGrants/mmmeHg1nFkmQQBUbcrNqlCMmBYSEG4VDvkKE0A9LL2A?api-version=1.6
+  response:
+    body:
+      string: ''
+    headers:
+      access-control-allow-origin:
+      - '*'
+      cache-control:
+      - no-cache
+      date:
+      - Tue, 05 May 2020 10:23:39 GMT
+      duration:
+      - '2087920'
+      expires:
+      - '-1'
+      ocp-aad-diagnostics-server-name:
+      - jiXJr/3WdIPfD6OtutkFnMeVMJsx/LMTjm/j83XWkn4=
+      ocp-aad-session-key:
+      - W1sC06D4FYx5eRDoRFXGUgjGjwwHsBhD2Ebql8TcUEFs2i6UBFZHCbmdI9jst0CflAutz5tj0WpDvqwXIHVt-P_8RsSwxewvPjBzzBsT_gc81ly2qWPGfrh1E9zgXLVpC_ihAdO5kwqmsEfQvaILkzhCxqv3oPDkRh1cyzNfhjsJqxUQhRcEewWDnnkvKAcMr8dQQaJzPkOsiQGJZ16b5w.hshGl3a3PhMiBeXRDTZuX22pRAf13rxRbKWYp67G4bs
+      pragma:
+      - no-cache
+      request-id:
+      - 1b92601d-9b8f-4657-ba8b-5d200100ae11
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-aspnet-version:
+      - 4.0.30319
+      x-ms-dirapi-data-contract-version:
+      - '1.6'
+      x-powered-by:
+      - ASP.NET
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: '{"odata.type": "Microsoft.DirectoryServices.OAuth2PermissionGrant", "clientId":
+      "1e9e699a-670d-4916-9040-151b72b36a94", "consentType": "AllPrincipals", "resourceId":
+      "84052623-1b84-4385-be42-84d00f4b2f60", "scope": "User.Read User.ReadBasic.All",
+      "startTime": "2020-05-05T10:23:39.544249", "expiryTime": "2021-05-05T10:23:39.544249"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - ad app permission grant
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '333'
+      Content-Type:
+      - application/json; charset=utf-8
+      ParameterSetName:
+      - --id --api --scope
+      User-Agent:
+      - python/3.7.2 (Windows-10-10.0.18362-SP0) requests/2.23.0 msrest/0.5.4 msrest_azure/0.6.3
+        azure-graphrbac/0.60.0 Azure-SDK-For-Python AZURECLI/2.5.1
+      accept-language:
+      - en-US
+    method: POST
+    uri: https://graph.windows.net/00000000-0000-0000-0000-000000000000/oauth2PermissionGrants?api-version=1.6
+  response:
+    body:
+      string: '{"odata.metadata":"https://graph.windows.net/00000000-0000-0000-0000-000000000000/$metadata#oauth2PermissionGrants/@Element","clientId":"1e9e699a-670d-4916-9040-151b72b36a94","consentType":"AllPrincipals","expiryTime":"2021-05-05T10:23:39.544249","objectId":"mmmeHg1nFkmQQBUbcrNqlCMmBYSEG4VDvkKE0A9LL2A","principalId":null,"resourceId":"84052623-1b84-4385-be42-84d00f4b2f60","scope":"User.Read
+        User.ReadBasic.All","startTime":"2020-05-05T10:23:39.544249"}'
+    headers:
+      access-control-allow-origin:
+      - '*'
+      cache-control:
+      - no-cache
+      content-length:
+      - '455'
+      content-type:
+      - application/json; odata=minimalmetadata; streaming=true; charset=utf-8
+      dataserviceversion:
+      - 3.0;
+      date:
+      - Tue, 05 May 2020 10:23:40 GMT
+      duration:
+      - '2729168'
+      expires:
+      - '-1'
+      location:
+      - https://graph.windows.net/00000000-0000-0000-0000-000000000000/oauth2PermissionGrants/mmmeHg1nFkmQQBUbcrNqlCMmBYSEG4VDvkKE0A9LL2A
+      ocp-aad-diagnostics-server-name:
+      - 7pmbxXKHNhMSQ10/4yOyYhwQwSWXTCOtojkymUc5CsA=
+      ocp-aad-session-key:
+      - Z1us-3RAjEuECzxuF18pJG25jHOjbOk7HspbJJz5yZogNHwmeOxOHYb0NKz-GiwXMOkkFgud3L7YCVyYreKjUDmlPRG32G_47KjQ6cxLJbSbtAS1NXkrRf58lcWgt4DVyHVYfU4pEkBjN55lkb82XoYqk01l3Bct4YHXr3N8O93zo9fmCVLbCij-Zhy7x4sJrh25yUAWN-zSlGzkG4jeXQ.pOQTEnWIfTuWE33YLW5mXjbJh2Yhhpf-LonL4KF79gs
+      pragma:
+      - no-cache
+      request-id:
+      - b03e5dca-5203-460b-8f3a-1e67755406ed
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-aspnet-version:
+      - 4.0.30319
+      x-ms-dirapi-data-contract-version:
+      - '1.6'
+      x-powered-by:
+      - ASP.NET
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - ad app permission list-grants
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - --id
+      User-Agent:
+      - python/3.7.2 (Windows-10-10.0.18362-SP0) requests/2.23.0 msrest/0.5.4 msrest_azure/0.6.3
+        azure-graphrbac/0.60.0 Azure-SDK-For-Python AZURECLI/2.5.1
+      accept-language:
+      - en-US
+    method: GET
+    uri: https://graph.windows.net/00000000-0000-0000-0000-000000000000/servicePrincipals?$filter=servicePrincipalNames%2Fany%28c%3Ac%20eq%20%27bfc17ae7-4e49-4149-bcac-3494ca5b8996%27%29%20or%20objectId%20eq%20%27bfc17ae7-4e49-4149-bcac-3494ca5b8996%27&api-version=1.6
+  response:
+    body:
+      string: '{"odata.metadata":"https://graph.windows.net/00000000-0000-0000-0000-000000000000/$metadata#directoryObjects","value":[{"odata.type":"Microsoft.DirectoryServices.ServicePrincipal","objectType":"ServicePrincipal","objectId":"1e9e699a-670d-4916-9040-151b72b36a94","deletionTimestamp":null,"accountEnabled":true,"addIns":[],"alternativeNames":[],"appDisplayName":"cli-app-000001","appId":"bfc17ae7-4e49-4149-bcac-3494ca5b8996","applicationTemplateId":null,"appOwnerTenantId":"1c411c5e-78cc-4e89-af5e-169408a540b8","appRoleAssignmentRequired":false,"appRoles":[],"displayName":"cli-app-000001","errorUrl":null,"homepage":"https://cli-app-000001","informationalUrls":{"termsOfService":null,"support":null,"privacy":null,"marketing":null},"keyCredentials":[],"logoutUrl":null,"notificationEmailAddresses":[],"oauth2Permissions":[{"adminConsentDescription":"Allow
+        the application to access cli-app-000001 on behalf of the signed-in user.","adminConsentDisplayName":"Access
+        cli-app-000001","id":"d53412d6-424d-4a3d-9750-d6fd07d84915","isEnabled":true,"type":"User","userConsentDescription":"Allow
+        the application to access cli-app-000001 on your behalf.","userConsentDisplayName":"Access
+        cli-app-000001","value":"user_impersonation"}],"passwordCredentials":[],"preferredSingleSignOnMode":null,"preferredTokenSigningKeyEndDateTime":null,"preferredTokenSigningKeyThumbprint":null,"publisherName":"PHSIGNOR","replyUrls":[],"samlMetadataUrl":null,"samlSingleSignOnSettings":null,"servicePrincipalNames":["http://cli-app-000001","bfc17ae7-4e49-4149-bcac-3494ca5b8996"],"servicePrincipalType":"Application","signInAudience":"AzureADMyOrg","tags":[],"tokenEncryptionKeyId":null}]}'
+    headers:
+      access-control-allow-origin:
+      - '*'
+      cache-control:
+      - no-cache
+      content-length:
+      - '1673'
+      content-type:
+      - application/json; odata=minimalmetadata; streaming=true; charset=utf-8
+      dataserviceversion:
+      - 3.0;
+      date:
+      - Tue, 05 May 2020 10:23:40 GMT
+      duration:
+      - '862104'
+      expires:
+      - '-1'
+      ocp-aad-diagnostics-server-name:
+      - gGjtJv9YmoO6g7tDGX22Pr7+W3WEeuuN4U/5Erk1k44=
+      ocp-aad-session-key:
+      - WaZx60Eo_0moNEpY25eG10EenWsfzTvNzA8GFJbX25DqCp9Q5r7DxJznlzDF8gvOQYKsEUtW-QdZ0We2DG0xF4DjkFYyfeXFnwCqZbAlXGMxn85kV4TlUutK9fXsMShFbFA50OSvkVLi6iDTHvhakkCO7xWu1mOuwkV7QBx0zkbrRhXTSIYyWyV1JPYfxRYu7F-PuRLlyaoX3B3oOLjo1Q.BDcf3EKnfMju2o5keC7ueUwodn4ul8t5hkOxMsao4s8
+      pragma:
+      - no-cache
+      request-id:
+      - aecf0da4-4769-4c89-b447-bc4152886385
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-aspnet-version:
+      - 4.0.30319
+      x-ms-dirapi-data-contract-version:
+      - '1.6'
+      x-powered-by:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - ad app permission list-grants
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - --id
+      User-Agent:
+      - python/3.7.2 (Windows-10-10.0.18362-SP0) requests/2.23.0 msrest/0.5.4 msrest_azure/0.6.3
+        azure-graphrbac/0.60.0 Azure-SDK-For-Python AZURECLI/2.5.1
+      accept-language:
+      - en-US
+    method: GET
+    uri: https://graph.windows.net/00000000-0000-0000-0000-000000000000/oauth2PermissionGrants?$filter=clientId%20eq%20%271e9e699a-670d-4916-9040-151b72b36a94%27&api-version=1.6
+  response:
+    body:
+      string: '{"odata.metadata":"https://graph.windows.net/00000000-0000-0000-0000-000000000000/$metadata#oauth2PermissionGrants","value":[{"clientId":"1e9e699a-670d-4916-9040-151b72b36a94","consentType":"AllPrincipals","expiryTime":"2021-05-05T10:23:39.544249","objectId":"mmmeHg1nFkmQQBUbcrNqlCMmBYSEG4VDvkKE0A9LL2A","principalId":null,"resourceId":"84052623-1b84-4385-be42-84d00f4b2f60","scope":"User.Read
+        User.ReadBasic.All","startTime":"2020-05-05T10:23:39.544249"}]}'
+    headers:
+      access-control-allow-origin:
+      - '*'
+      cache-control:
+      - no-cache
+      content-length:
+      - '458'
+      content-type:
+      - application/json; odata=minimalmetadata; streaming=true; charset=utf-8
+      dataserviceversion:
+      - 3.0;
+      date:
+      - Tue, 05 May 2020 10:23:40 GMT
+      duration:
+      - '689823'
+      expires:
+      - '-1'
+      ocp-aad-diagnostics-server-name:
+      - VITJFnwf4DNDXbjoCwSTXJ+XEycH43xrCXqHoJvpClo=
+      ocp-aad-session-key:
+      - sP4cWbRsLFmUhv_M5YPnDdzU_vffbMB_OcnIcP67MPZBX4_-zwXQ5Ow1soSwB8B7KV-G_UrXHrM2VVIBzJHUzhsaIzRuI6VDXj7ssIESeoGjOiuF3_bWxM7_r7C1_t_jAOPpqgzhs0gdauwsxJ4aPdAyCZbgYw_qfB5twKWApMWj4a39a3HoKNpKyjaE7HN_Jv_jTUfw3c-or5TJOqOn-w.3-c53dEpBQGEuy6Z48N7iO82FmVDlhtel5casKex8Fs
+      pragma:
+      - no-cache
+      request-id:
+      - 706fe94f-20d5-4722-8b65-0d63f38a1fce
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-aspnet-version:
+      - 4.0.30319
+      x-ms-dirapi-data-contract-version:
+      - '1.6'
+      x-powered-by:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - ad app delete
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - --id
+      User-Agent:
+      - python/3.7.2 (Windows-10-10.0.18362-SP0) requests/2.23.0 msrest/0.5.4 msrest_azure/0.6.3
+        azure-graphrbac/0.60.0 Azure-SDK-For-Python AZURECLI/2.5.1
+      accept-language:
+      - en-US
+    method: GET
+    uri: https://graph.windows.net/00000000-0000-0000-0000-000000000000/applications?$filter=identifierUris%2Fany%28s%3As%20eq%20%27bfc17ae7-4e49-4149-bcac-3494ca5b8996%27%29&api-version=1.6
+  response:
+    body:
+      string: '{"odata.metadata":"https://graph.windows.net/00000000-0000-0000-0000-000000000000/$metadata#directoryObjects","value":[]}'
+    headers:
+      access-control-allow-origin:
+      - '*'
+      cache-control:
+      - no-cache
+      content-length:
+      - '121'
+      content-type:
+      - application/json; odata=minimalmetadata; streaming=true; charset=utf-8
+      dataserviceversion:
+      - 3.0;
+      date:
+      - Tue, 05 May 2020 10:23:41 GMT
+      duration:
+      - '681952'
+      expires:
+      - '-1'
+      ocp-aad-diagnostics-server-name:
+      - 1NLGSpbQa/sgyX5Koc4Pfki9rdzL63nmFXc/kk253lk=
+      ocp-aad-session-key:
+      - i8_F1WWXQlH-EEIls0tEJ6wcGtDt00VpqwCrGJJJfi9JleA55ieDnq4P6rRkJfw0Hwh2lySVFuAqB8_BIOjiUYfoHP73ygfqN8M_SiuGf5SBqCzJgjl39_tgTZYP2lmNlhAeOlvDhzd21ZroyIUon0LKL77sHdN4f8u_aQAOS6m7WgWjNRqbhKn7-jlSY2FaVkA6lxEMr2lSjR6vV3SlZg.ra6LZkMYlymXojh5Rc502R0hFOhHcBchCnzSu7cIPNw
+      pragma:
+      - no-cache
+      request-id:
+      - 4f4b8f3e-dd62-4dca-900c-e056931c83c9
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-aspnet-version:
+      - 4.0.30319
+      x-ms-dirapi-data-contract-version:
+      - '1.6'
+      x-powered-by:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - ad app delete
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - --id
+      User-Agent:
+      - python/3.7.2 (Windows-10-10.0.18362-SP0) requests/2.23.0 msrest/0.5.4 msrest_azure/0.6.3
+        azure-graphrbac/0.60.0 Azure-SDK-For-Python AZURECLI/2.5.1
+      accept-language:
+      - en-US
+    method: GET
+    uri: https://graph.windows.net/00000000-0000-0000-0000-000000000000/applications?$filter=appId%20eq%20%27bfc17ae7-4e49-4149-bcac-3494ca5b8996%27&api-version=1.6
+  response:
+    body:
+      string: '{"odata.metadata":"https://graph.windows.net/00000000-0000-0000-0000-000000000000/$metadata#directoryObjects","value":[{"odata.type":"Microsoft.DirectoryServices.Application","objectType":"Application","objectId":"1786fb82-8812-471d-9b57-81775970fbc4","deletionTimestamp":null,"acceptMappedClaims":null,"addIns":[],"appId":"bfc17ae7-4e49-4149-bcac-3494ca5b8996","applicationTemplateId":null,"appRoles":[],"availableToOtherTenants":false,"displayName":"cli-app-000001","errorUrl":null,"groupMembershipClaims":null,"homepage":"https://cli-app-000001","identifierUris":["http://cli-app-000001"],"informationalUrls":{"termsOfService":null,"support":null,"privacy":null,"marketing":null},"isDeviceOnlyAuthSupported":null,"keyCredentials":[],"knownClientApplications":[],"logoutUrl":null,"logo@odata.mediaEditLink":"directoryObjects/1786fb82-8812-471d-9b57-81775970fbc4/Microsoft.DirectoryServices.Application/logo","logoUrl":null,"mainLogo@odata.mediaEditLink":"directoryObjects/1786fb82-8812-471d-9b57-81775970fbc4/Microsoft.DirectoryServices.Application/mainLogo","oauth2AllowIdTokenImplicitFlow":true,"oauth2AllowImplicitFlow":false,"oauth2AllowUrlPathMatching":false,"oauth2Permissions":[{"adminConsentDescription":"Allow
+        the application to access cli-app-000001 on behalf of the signed-in user.","adminConsentDisplayName":"Access
+        cli-app-000001","id":"d53412d6-424d-4a3d-9750-d6fd07d84915","isEnabled":true,"type":"User","userConsentDescription":"Allow
+        the application to access cli-app-000001 on your behalf.","userConsentDisplayName":"Access
+        cli-app-000001","value":"user_impersonation"}],"oauth2RequirePostResponse":false,"optionalClaims":null,"orgRestrictions":[],"parentalControlSettings":{"countriesBlockedForMinors":[],"legalAgeGroupRule":"Allow"},"passwordCredentials":[{"customKeyIdentifier":"//5yAGIAYQBjAA==","endDate":"2021-05-05T10:23:31.56994Z","keyId":"eac7caae-acfc-4eec-8029-03cbcfbca44f","startDate":"2020-05-05T10:23:31.56994Z","value":null}],"publicClient":null,"publisherDomain":"phsignor.onmicrosoft.com","recordConsentConditions":null,"replyUrls":[],"requiredResourceAccess":[],"samlMetadataUrl":null,"signInAudience":"AzureADMyOrg","tokenEncryptionKeyId":null}]}'
+    headers:
+      access-control-allow-origin:
+      - '*'
+      cache-control:
+      - no-cache
+      content-length:
+      - '2193'
+      content-type:
+      - application/json; odata=minimalmetadata; streaming=true; charset=utf-8
+      dataserviceversion:
+      - 3.0;
+      date:
+      - Tue, 05 May 2020 10:23:41 GMT
+      duration:
+      - '1547359'
+      expires:
+      - '-1'
+      ocp-aad-diagnostics-server-name:
+      - RER3CF+p0RYZRb08RxHkk6FS7DlDmOqmefe8mEZwFBg=
+      ocp-aad-session-key:
+      - Evw-zSmnudVR324-3Z4Cnh6Xzv-Zd-zADIQhI_dvrcYXcZ-wzX5T670UGyvep6qk0K2cmi7-4Of5-IzZrYGwEkHXbvAABvTwOXJzP4ksscp1GYPxD-jWUhRHC76gUA00b81zFdoId5esEqM_WtdX57oiOSpWh0kI1kDykJJxaDHJSUVP93fBpBsiQkd6VY69yBTJaxPhvX0DSuJdBev7Vw.4gE2Z4HimWTdwNVUnLTnNADNXbU26jT__RacaQtHZaA
+      pragma:
+      - no-cache
+      request-id:
+      - 07e101a6-88c3-43f8-a9c6-0b86a72b5349
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-aspnet-version:
+      - 4.0.30319
+      x-ms-dirapi-data-contract-version:
+      - '1.6'
+      x-powered-by:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - ad app delete
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      ParameterSetName:
+      - --id
+      User-Agent:
+      - python/3.7.2 (Windows-10-10.0.18362-SP0) requests/2.23.0 msrest/0.5.4 msrest_azure/0.6.3
+        azure-graphrbac/0.60.0 Azure-SDK-For-Python AZURECLI/2.5.1
+      accept-language:
+      - en-US
+    method: DELETE
+    uri: https://graph.windows.net/00000000-0000-0000-0000-000000000000/applications/1786fb82-8812-471d-9b57-81775970fbc4?api-version=1.6
+  response:
+    body:
+      string: ''
+    headers:
+      access-control-allow-origin:
+      - '*'
+      cache-control:
+      - no-cache
+      date:
+      - Tue, 05 May 2020 10:23:42 GMT
+      duration:
+      - '2353543'
+      expires:
+      - '-1'
+      ocp-aad-diagnostics-server-name:
+      - NCLikt5gA/KhTFVr9i6W+Ah7pWAcW54TIy83Z9kJVH0=
+      ocp-aad-session-key:
+      - wjQsuJz2GAwADP2Jfb-A4GnHI-dV6E9cXVobpYbe_U9ZHbtDxOmYRNwklB7_OQUFYCB10R-shNvePVUuVQiGzLCXbnhypG-69Yh4rfWbfS9v7B2qNIkTiOuHEca5g0ZQpbRSwiPZKuALeQkjUEK9COF-NQoKNC4gk4rpNaiLBdC5WjJKloE8RBhMYXVHsAySH7LIZOz4r76HUmQ7rawOIg.pl_PPYN9TKuYp59iuNnInkSqBI74SBXqNitI1iEo_wc
+      pragma:
+      - no-cache
+      request-id:
+      - ceac2444-a52e-4088-a21a-d5b06cd2f736
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-aspnet-version:
+      - 4.0.30319
+      x-ms-dirapi-data-contract-version:
+      - '1.6'
+      x-powered-by:
+      - ASP.NET
+    status:
+      code: 204
+      message: No Content
+version: 1

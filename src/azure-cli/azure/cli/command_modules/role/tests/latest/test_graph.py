@@ -8,6 +8,7 @@ import unittest
 import datetime
 import dateutil
 import dateutil.parser
+import re
 from azure_devtools.scenario_tests import AllowLargeResponse
 from azure.cli.testsdk import ScenarioTest, AADGraphUserReplacer, MOCKED_USER_NAME
 from knack.util import CLIError
@@ -596,6 +597,35 @@ class GraphAppRequiredAccessScenarioTest(ScenarioTest):
             self.cmd('ad app permission list --id {app_id}', checks=[
                 self.check('length([*])', 0)
             ])
+        finally:
+            if self.kwargs['app_id']:
+                self.cmd('ad app delete --id {app_id}')
+
+
+class GraphPermissionGrantScenarioTest(ScenarioTest):
+
+    def test_graph_app_delegated_permission_grants_e2e(self):
+        self.kwargs = {
+            'display_name': self.create_random_name('cli-app-', 15),
+            'graph_resource': '00000002-0000-0000-c000-000000000000',
+            'scope_1': 'User.Read',
+            'scope_2': 'User.ReadBasic.All'
+        }
+        self.kwargs['app_id'] = None
+        try:
+            result = self.cmd('ad sp create-for-rbac --name {display_name} --skip-assignment').get_output_in_json()
+            self.kwargs['app_id'] = result['appId']
+
+            self.cmd('ad app permission grant --id {app_id} --api {graph_resource} --scope "{scope_1}"')
+            grants = self.cmd('ad app permission list-grants --id {app_id}', checks=self.check('length([*])', 1)).get_output_in_json()
+            self.assertTrue(len(re.split('[ ]+', grants[0]['scope'].strip())) == 1)
+
+            self.cmd('ad app permission list-grants --id {app_id} --show-resource-name',
+                     checks=self.check('[0].resourceDisplayName', "Windows Azure Active Directory"))
+
+            self.cmd('ad app permission grant --id {app_id} --api {graph_resource} --scope "{scope_1} {scope_2}"')
+            grants = self.cmd('ad app permission list-grants --id {app_id}', checks=self.check('length([*])', 1)).get_output_in_json()
+            self.assertTrue(len(re.split('[ ]+', grants[0]['scope'].strip())) == 2)
         finally:
             if self.kwargs['app_id']:
                 self.cmd('ad app delete --id {app_id}')
